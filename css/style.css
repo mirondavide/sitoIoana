@@ -319,6 +319,7 @@ header {
 
 .products-scroll {
     display: flex;
+    flex-wrap: nowrap;
     gap: 16px;
     overflow-x: auto;
     padding-bottom: 8px;
@@ -532,6 +533,7 @@ header {
 
 .featured-scroll {
     display: flex;
+    flex-wrap: nowrap;
     gap: 16px;
     overflow-x: auto;
     padding-bottom: 8px;
