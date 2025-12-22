@@ -550,6 +550,16 @@ header {
     font-weight: 400;
 }
 
+.footer-contact a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
 /* Bottom Navigation */
 .bottom-nav {
     display: none;
