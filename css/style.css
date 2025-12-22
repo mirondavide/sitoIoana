@@ -43,14 +43,7 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
-    padding-bottom: 70px; /* Space for bottom nav */
     -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: 768px) {
-    body {
-        padding-bottom: 0;
-    }
 }
 
 /* Typography */
@@ -513,13 +506,6 @@ header {
 .footer {
     background: #8b6b6b;
     padding: 24px 0;
-    margin-bottom: 70px;
-}
-
-@media (min-width: 768px) {
-    .footer {
-        margin-bottom: 0;
-    }
 }
 
 .footer-content {
@@ -566,16 +552,7 @@ header {
 
 /* Bottom Navigation */
 .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--color-white);
-    display: flex;
-    justify-content: space-around;
-    padding: 8px 0 12px;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
-    z-index: 1000;
+    display: none;
 }
 
 .bottom-nav-item {
@@ -949,18 +926,6 @@ body.has-order-btn {
     border-color: transparent;
 }
 
-.contact-card-icon.email {
-    background: linear-gradient(135deg, var(--color-bg-card) 0%, #e0d4c8 100%);
-    color: var(--color-accent);
-    border: 2px solid var(--color-border);
-}
-
-.contact-card:hover .contact-card-icon.email {
-    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
-    color: white;
-    border-color: transparent;
-}
-
 .contact-card-content {
     flex: 1;
 }
@@ -990,73 +955,6 @@ body.has-order-btn {
     color: var(--color-primary);
 }
 
-/* Contact Form Wrapper */
-.contact-form-wrapper {
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    padding: 32px 24px;
-    box-shadow: var(--shadow-sm);
-    height: 100%;
-}
-
-@media (min-width: 768px) {
-    .contact-form-wrapper {
-        padding: 40px;
-    }
-}
-
-/* Form Floating Styles */
-.contact-form .form-floating > .form-control {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    background: var(--color-bg);
-    transition: all 0.3s ease;
-}
-
-.contact-form .form-floating > .form-control:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
-    background: var(--color-white);
-}
-
-.contact-form .form-floating > label {
-    color: var(--color-text-muted);
-}
-
-.contact-form .form-floating > .form-control:focus ~ label {
-    color: var(--color-primary);
-}
-
-/* Contact Submit Button */
-.btn-contact-submit {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 16px 32px;
-    background: linear-gradient(135deg, #8b6b6b 0%, #a08080 100%);
-    color: var(--color-white);
-    border: none;
-    border-radius: var(--radius-pill);
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-contact-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(139, 107, 107, 0.3);
-}
-
-.btn-contact-submit i {
-    transition: transform 0.3s ease;
-}
-
-.btn-contact-submit:hover i {
-    transform: translateX(4px);
-}
 
 /* ================================
    SUGGESTIONS SECTION (You Might Also Like)
