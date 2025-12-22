@@ -311,7 +311,37 @@ function initFavouritesPage() {
             orderBtnContainer.classList.remove('d-none');
             document.body.classList.add('has-order-btn');
         }
+
+        // Initialize order button click handler
+        initFavouritesOrderButton();
     }
+}
+
+/**
+ * Initialize Order Button on Favourites Page
+ */
+function initFavouritesOrderButton() {
+    const orderBtn = document.getElementById('orderBtn');
+    if (!orderBtn) return;
+
+    orderBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const favourites = getFavourites();
+        if (favourites.length === 0) return;
+
+        let productsList = favourites.map(product =>
+            `- ${product.name} (€ ${product.price})`
+        ).join('\n');
+
+        const message = `Ciao! Sono interessato/a ai seguenti prodotti:\n\n` +
+            `${productsList}\n\n` +
+            `Vorrei avere maggiori informazioni!`;
+
+        const phoneNumber = '392302615110';
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    });
 }
 
 function createFavouriteItem(product) {

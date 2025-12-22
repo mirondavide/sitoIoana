@@ -398,6 +398,26 @@
                 icon.classList.add('bi-heart');
             }
         });
+
+        // Order button - WhatsApp with pre-built message
+        document.getElementById('orderProductBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const productName = document.querySelector('.product-title-main').textContent;
+            const productPrice = document.querySelector('.product-price-main').textContent;
+            const productCategory = document.querySelector('.product-category').textContent;
+            const currentUrl = window.location.href;
+
+            const message = `Ciao! Ho trovato questo prodotto sul vostro sito e sono interessato/a:\n\n` +
+                `Prodotto: ${productName}\n` +
+                `Categoria: ${productCategory}\n` +
+                `Prezzo: ${productPrice}\n\n` +
+                `Link: ${currentUrl}\n\n` +
+                `Vorrei avere maggiori informazioni!`;
+
+            const phoneNumber = '392302615110';
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
     </script>
 </body>
 </html>
