@@ -3,30 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian - Articoli per Bambini</title>
-    <!-- Bootstrap CSS -->
+    <title>Shop - Fabian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Shop Page Specific Styles */
+        .category-header {
+            background: transparent;
+        }
+
+        .category-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--color-text);
+            text-align: center;
+            padding: 24px 0;
+            margin: 0;
+            background: white;
+        }
+
+        .filters-label {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text);
+            margin-bottom: 12px;
+        }
+
+    </style>
 </head>
-<body>
+<body class="shop-page">
     <!-- Header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
             <div class="container">
                 <div class="d-flex align-items-center">
                     <a href="index.html"><img src="img/fabian.png" alt="Logo" class="logo-img me-2"></a>
-                    <span class="page-title">HOME</span>
+                    <span class="page-title">SHOP</span>
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav gap-4">
-                        <li class="nav-item"><a class="nav-link fw-medium active" href="index.html">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link fw-medium" href="shop.html">SHOP</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium active" href="shop.html">SHOP</a></li>
                         <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">FAVOURITES</a></li>
                         <li class="nav-item"><a class="nav-link fw-medium" href="contacts.html">CONTACTS</a></li>
                     </ul>
@@ -44,113 +67,33 @@
             <h5 class="offcanvas-title">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvas-body d-flex flex-column">
+        <div class="offcanvas-body">
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
                 <li class="nav-item"><a class="nav-link" href="favourites.html">Favourites</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
             </ul>
-            <div class="mt-auto pt-4">
-                <p class="text-muted small mb-2">Seguici</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-dark fs-4"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
-                </div>
-            </div>
         </div>
     </div>
 
-    <!-- Hero Carousel -->
-    <section class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="hero-slide">
-                        <img src="img/fabian.png" alt="Collezione Primavera" class="w-100 h-100 object-fit-cover">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-slide">
-                        <img src="img/fabian.png" alt="Nuovi Arrivi" class="w-100 h-100 object-fit-cover">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-slide">
-                        <img src="img/fabian.png" alt="Offerte Speciali" class="w-100 h-100 object-fit-cover">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-slide">
-                        <img src="img/fabian.png" alt="Collezione Esclusiva" class="w-100 h-100 object-fit-cover">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-indicators custom-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="categories-section py-4">
+    <!-- Category Title -->
+    <section class="category-header">
         <div class="container">
-            <h2 class="section-title mb-3">Categorie</h2>
-            <div class="categories-scroll">
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Cucina">
-                    </div>
-                    <span class="category-name">Cucina</span>
-                </div>
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Asilo">
-                    </div>
-                    <span class="category-name">Asilo</span>
-                </div>
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Regalo">
-                    </div>
-                    <span class="category-name">Regalo</span>
-                </div>
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Cucina">
-                    </div>
-                    <span class="category-name">Cucina</span>
-                </div>
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Scuola">
-                    </div>
-                    <span class="category-name">Scuola</span>
-                </div>
-                <div class="category-item">
-                    <div class="category-img-wrapper">
-                        <img src="img/fabian.png" alt="Neonato">
-                    </div>
-                    <span class="category-name">Neonato</span>
-                </div>
-            </div>
+            <h2 class="category-title" id="categoryTitle">Asilo</h2>
         </div>
     </section>
 
     <!-- Filters Section -->
     <section class="filters-section pb-3">
         <div class="container">
-            <h2 class="section-title mb-3">Filtri</h2>
+            <p class="filters-label">Filtri</p>
             <div class="filters-scroll">
                 <button class="filter-pill" data-filter="tutti">Tutti</button>
+                <button class="filter-pill active" data-filter="asilo">Asilo</button>
                 <button class="filter-pill active" data-filter="bimbo">Bimbo</button>
                 <button class="filter-pill" data-filter="bimba">Bimba</button>
                 <button class="filter-pill" data-filter="regalo">Regalo</button>
-                <button class="filter-pill" data-filter="asilo">Asilo</button>
                 <button class="filter-pill" data-filter="cucina">Cucina</button>
             </div>
         </div>
@@ -159,7 +102,6 @@
     <!-- Products Section -->
     <section class="products-section py-4">
         <div class="container">
-            <h2 class="section-title mb-3">Tutti</h2>
             <div class="products-grid">
                 <!-- Product Card 1 -->
                 <div class="product-card" data-category="bimbo asilo" data-product-id="1" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
@@ -227,60 +169,26 @@
                         <p class="product-price">&euro; 120.00</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Arrivals Section -->
-    <section class="new-arrivals-section py-4">
-        <div class="container">
-            <h2 class="section-title mb-3">Nuovi arrivi</h2>
-            <div class="promo-banner">
-                <div class="promo-content">
-                    <h3 class="promo-brand">Fabian</h3>
-                    <p class="promo-text">Scopri il nuovo zainetto asilo<br>ideale per il tuo bambino!</p>
-                    <a href="product.html" class="promo-link">Vedi prodotto <i class="bi bi-arrow-right"></i></a>
-                </div>
-                <div class="promo-img">
-                    <img src="img/fabian.png" alt="Nuovo Zaino Fabian">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Carousel -->
-    <section class="featured-section py-4">
-        <div class="container">
-            <h2 class="section-title mb-3">I più amati</h2>
-            <div class="featured-scroll">
-                <div class="product-card featured-card" data-product-id="7" data-product-name="Zaino tartaruga" data-product-price="85.00" data-product-image="img/fabian.png">
+                <!-- Product Card 7 -->
+                <div class="product-card" data-category="bimbo" data-product-id="7" data-product-name="Zaino tartaruga" data-product-price="85.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Zaino tartaruga">
-                        <span class="badge-bestseller">Bestseller</span>
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Zaino tartaruga</h3>
                         <p class="product-price">&euro; 85.00</p>
                     </div>
                 </div>
-                <div class="product-card featured-card" data-product-id="8" data-product-name="Set completo" data-product-price="110.00" data-product-image="img/fabian.png">
+                <!-- Product Card 8 -->
+                <div class="product-card" data-category="bimba" data-product-id="8" data-product-name="Set completo" data-product-price="110.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Set completo">
-                        <span class="badge-bestseller">Bestseller</span>
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Set completo</h3>
                         <p class="product-price">&euro; 110.00</p>
-                    </div>
-                </div>
-                <div class="product-card featured-card" data-product-id="9" data-product-name="Borraccia" data-product-price="25.00" data-product-image="img/fabian.png">
-                    <div class="product-img-wrapper">
-                        <img src="img/fabian.png" alt="Borraccia">
-                        <span class="badge-bestseller">Bestseller</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Borraccia</h3>
-                        <p class="product-price">&euro; 25.00</p>
                     </div>
                 </div>
             </div>
@@ -302,11 +210,11 @@
 
     <!-- Bottom Navigation (Mobile) -->
     <nav class="bottom-nav d-md-none">
-        <a href="index.html" class="bottom-nav-item active">
+        <a href="index.html" class="bottom-nav-item">
             <i class="bi bi-house"></i>
             <span>Home</span>
         </a>
-        <a href="shop.html" class="bottom-nav-item">
+        <a href="#" class="bottom-nav-item">
             <i class="bi bi-search"></i>
             <span>Cerca</span>
         </a>
@@ -318,13 +226,12 @@
             <i class="bi bi-bag"></i>
             <span>Carrello</span>
         </a>
-        <a href="contacts.html" class="bottom-nav-item">
+        <a href="#" class="bottom-nav-item">
             <i class="bi bi-person"></i>
             <span>Account</span>
         </a>
     </nav>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

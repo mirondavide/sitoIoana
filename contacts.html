@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Fabian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a href="index.html"><img src="img/fabian.png" alt="Logo" class="logo-img me-2"></a>
+                    <span class="page-title">CONTACTS</span>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item"><a class="nav-link fw-medium" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="shop.html">SHOP</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">FAVOURITES</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium active" href="contacts.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="favourites.html">Favourites</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Contattaci</h1>
+                <p class="contact-hero-subtitle">Siamo qui per aiutarti. Scrivici e ti risponderemo il prima possibile.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Info Cards -->
+                <div class="col-lg-5">
+                    <div class="contact-info-wrapper">
+                        <h3 class="contact-section-title">Come contattarci</h3>
+                        <p class="contact-section-desc">Scegli il metodo che preferisci per metterti in contatto con noi.</p>
+
+                        <div class="contact-cards">
+                            <a href="https://instagram.com/madewithlove.sd" target="_blank" class="contact-card">
+                                <div class="contact-card-icon instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h6>Instagram</h6>
+                                    <p>@madewithlove.sd</p>
+                                </div>
+                                <i class="bi bi-arrow-right contact-card-arrow"></i>
+                            </a>
+
+                            <a href="https://wa.me/392302615110" target="_blank" class="contact-card">
+                                <div class="contact-card-icon whatsapp">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h6>WhatsApp</h6>
+                                    <p>+39 230 261 5110</p>
+                                </div>
+                                <i class="bi bi-arrow-right contact-card-arrow"></i>
+                            </a>
+
+                            <a href="mailto:davidemiron30@gmail.com" class="contact-card">
+                                <div class="contact-card-icon email">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h6>Email</h6>
+                                    <p>davidemiron30@gmail.com</p>
+                                </div>
+                                <i class="bi bi-arrow-right contact-card-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-section-title">Inviaci un messaggio</h3>
+                        <p class="contact-section-desc">Compila il modulo e ti risponderemo entro 24 ore.</p>
+
+                        <form class="contact-form" action="https://formspree.io/f/mqezywky" method="POST">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Il tuo nome" required>
+                                        <label for="name">Nome</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="La tua email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Oggetto" required>
+                                        <label for="subject">Oggetto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Messaggio" style="height: 150px" required></textarea>
+                                        <label for="message">Il tuo messaggio</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-contact-submit">
+                                        <span>Invia messaggio</span>
+                                        <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mb-0">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-title">Contatti</h2>
+                <div class="footer-contact">
+                    <p><i class="bi bi-instagram"></i> madewithlove.sd</p>
+                    <p><i class="bi bi-whatsapp"></i> +39 2302615110</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav d-md-none">
+        <a href="index.html" class="bottom-nav-item">
+            <i class="bi bi-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="bi bi-search"></i>
+            <span>Cerca</span>
+        </a>
+        <a href="favourites.html" class="bottom-nav-item">
+            <i class="bi bi-heart"></i>
+            <span>Preferiti</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="bi bi-bag"></i>
+            <span>Carrello</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="bi bi-person"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
