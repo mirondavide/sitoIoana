@@ -160,6 +160,56 @@
                 font-size: 2.5rem;
             }
         }
+
+        .product-actions-section .container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .product-actions-section .btn-order {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            background: var(--color-primary);
+            color: var(--color-white);
+            text-align: center;
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 400;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .product-actions-section .btn-order:hover {
+            background: var(--color-text);
+        }
+
+        .product-actions-section .btn-favourites {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            background: #e8e4e1;
+            color: var(--color-primary);
+            text-align: center;
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 400;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .product-actions-section .btn-favourites:hover {
+            background: #ddd8d4;
+        }
+
+        @media (min-width: 768px) {
+            .product-actions-section .container {
+                max-width: 400px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -242,6 +292,59 @@
             </ul>
         </div>
     </div>
+
+    <!-- Action Buttons Section -->
+    <section class="product-actions-section py-4">
+        <div class="container">
+            <a href="#" class="btn-order mb-3" id="orderProductBtn">Fai un ordine!</a>
+            <a href="favourites.html" class="btn-favourites">Vedi tutti gli articoli preferiti</a>
+        </div>
+    </section>
+
+    <!-- You Might Also Like Section -->
+    <section class="suggestions-section py-4">
+        <div class="container">
+            <h2 class="section-title mb-3">Ti potrebbe anche piacere</h2>
+            <div class="suggestions-scroll">
+                <div class="product-card suggestion-card" data-product-id="101" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
+                    <div class="product-img-wrapper">
+                        <img src="img/fabian.png" alt="Set asilo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Set asilo</h3>
+                        <p class="product-price">&euro; 90.00</p>
+                    </div>
+                </div>
+                <div class="product-card suggestion-card" data-product-id="102" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
+                    <div class="product-img-wrapper">
+                        <img src="img/fabian.png" alt="Set asilo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Set asilo</h3>
+                        <p class="product-price">&euro; 90.00</p>
+                    </div>
+                </div>
+                <div class="product-card suggestion-card" data-product-id="103" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
+                    <div class="product-img-wrapper">
+                        <img src="img/fabian.png" alt="Set asilo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Set asilo</h3>
+                        <p class="product-price">&euro; 90.00</p>
+                    </div>
+                </div>
+                <div class="product-card suggestion-card" data-product-id="104" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
+                    <div class="product-img-wrapper">
+                        <img src="img/fabian.png" alt="Set asilo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Set asilo</h3>
+                        <p class="product-price">&euro; 90.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer mb-0">
