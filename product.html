@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Product Page Specific Styles */
@@ -243,7 +244,18 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav gap-4">
                         <li class="nav-item"><a class="nav-link fw-medium" href="index.html">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link fw-medium" href="shop.html">SHOP</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-medium dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html?category=cucina">Cucina</a></li>
+                                <li><a class="dropdown-item" href="shop.html?category=borse">Borse</a></li>
+                                <li><a class="dropdown-item" href="shop.html?category=asilo">Asilo</a></li>
+                                <li><a class="dropdown-item" href="shop.html?category=decorazioni">Decorazioni</a></li>
+                                <li><a class="dropdown-item" href="shop.html?category=regali-nascita">Regali nascita</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link fw-medium" href="favourites.html">FAVOURITES</a></li>
                         <li class="nav-item"><a class="nav-link fw-medium" href="contacts.html">CONTACTS</a></li>
                     </ul>
@@ -264,7 +276,18 @@
         <div class="offcanvas-body d-flex flex-column">
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="shop.html?category=cucina">Cucina</a></li>
+                        <li><a class="dropdown-item" href="shop.html?category=borse">Borse</a></li>
+                        <li><a class="dropdown-item" href="shop.html?category=asilo">Asilo</a></li>
+                        <li><a class="dropdown-item" href="shop.html?category=decorazioni">Decorazioni</a></li>
+                        <li><a class="dropdown-item" href="shop.html?category=regali-nascita">Regali nascita</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="favourites.html">Favourites</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
             </ul>
