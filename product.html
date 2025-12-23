@@ -13,19 +13,25 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Product Page Specific Styles */
+        #productCarousel {
+            position: relative;
+        }
+
         .product-image-container {
             position: relative;
             background: transparent;
             overflow: hidden;
+            aspect-ratio: 1;
         }
 
         .product-image-container img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
-        .product-image-container .favorite-btn {
+        #productCarousel .favorite-btn {
             position: absolute;
             top: 16px;
             right: 16px;
@@ -39,14 +45,15 @@
             justify-content: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             cursor: pointer;
+            z-index: 10;
         }
 
-        .product-image-container .favorite-btn i {
+        #productCarousel .favorite-btn i {
             font-size: 1.2rem;
             color: var(--color-text);
         }
 
-        .product-image-container .favorite-btn.active i {
+        #productCarousel .favorite-btn.active i {
             color: #e74c3c;
         }
 
@@ -286,12 +293,39 @@
         </div>
     </div>
 
-    <!-- Product Image -->
-    <div class="product-image-container">
-        <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato">
+    <!-- Product Image Carousel -->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="product-image-container">
+                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="product-image-container">
+                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 2">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="product-image-container">
+                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 3">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="product-image-container">
+                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 4">
+                </div>
+            </div>
+        </div>
         <button class="favorite-btn" id="favoriteBtn">
             <i class="bi bi-heart"></i>
         </button>
+        <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"></button>
+        </div>
     </div>
 
     <!-- Product Content -->
