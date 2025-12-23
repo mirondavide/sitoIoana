@@ -178,21 +178,14 @@ function showToast(message) {
         border-radius: 25px;
         font-size: 0.85rem;
         z-index: 2000;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        opacity: 1;
     `;
 
     document.body.appendChild(toast);
 
-    // Trigger animation
-    requestAnimationFrame(() => {
-        toast.style.opacity = '1';
-    });
-
     // Remove after delay
     setTimeout(() => {
-        toast.style.opacity = '0';
-        setTimeout(() => toast.remove(), 300);
+        toast.remove();
     }, 2000);
 }
 
@@ -372,23 +365,17 @@ function createFavouriteItem(product) {
         removeFromFavourites(product.id);
         showToast('Rimosso dai preferiti');
 
-        item.style.opacity = '0';
-        item.style.transform = 'translateX(-20px)';
-        item.style.transition = 'all 0.3s ease';
-
-        setTimeout(() => {
-            item.remove();
-            const remainingFavourites = getFavourites();
-            if (remainingFavourites.length === 0) {
-                document.getElementById('emptyFavourites').style.display = 'block';
-                document.getElementById('favouritesList').style.display = 'none';
-                const orderBtnContainer = document.getElementById('orderBtnContainer');
-                if (orderBtnContainer) {
-                    orderBtnContainer.classList.add('d-none');
-                    document.body.classList.remove('has-order-btn');
-                }
+        item.remove();
+        const remainingFavourites = getFavourites();
+        if (remainingFavourites.length === 0) {
+            document.getElementById('emptyFavourites').style.display = 'block';
+            document.getElementById('favouritesList').style.display = 'none';
+            const orderBtnContainer = document.getElementById('orderBtnContainer');
+            if (orderBtnContainer) {
+                orderBtnContainer.classList.add('d-none');
+                document.body.classList.remove('has-order-btn');
             }
-        }, 300);
+        }
     });
 
     return item;

@@ -39,11 +39,6 @@
             justify-content: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-
-        .product-image-container .favorite-btn:hover {
-            transform: scale(1.1);
         }
 
         .product-image-container .favorite-btn i {
@@ -199,11 +194,6 @@
             font-size: 1rem;
             font-weight: 400;
             border-radius: 30px;
-            transition: background 0.3s ease;
-        }
-
-        .product-actions-section .btn-order:hover {
-            background: var(--color-text);
         }
 
         .product-actions-section .btn-favourites {
@@ -218,11 +208,6 @@
             font-size: 1rem;
             font-weight: 400;
             border-radius: 30px;
-            transition: background 0.3s ease;
-        }
-
-        .product-actions-section .btn-favourites:hover {
-            background: #ddd8d4;
         }
 
         @media (min-width: 768px) {
@@ -493,19 +478,13 @@
                 border-radius: 25px;
                 font-size: 0.85rem;
                 z-index: 2000;
-                opacity: 0;
-                transition: opacity 0.3s ease;
+                opacity: 1;
             `;
 
             document.body.appendChild(toast);
 
-            requestAnimationFrame(() => {
-                toast.style.opacity = '1';
-            });
-
             setTimeout(() => {
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 300);
+                toast.remove();
             }, 2000);
         }
 

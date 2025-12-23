@@ -92,12 +92,6 @@ header {
     font-weight: 400;
     color: var(--color-text);
     padding: 0.5rem 1rem;
-    transition: all 0.2s ease;
-}
-
-.navbar-nav .dropdown-item:hover {
-    background-color: rgba(120, 61, 68, 0.1);
-    color: #783D44;
 }
 
 .navbar-nav .dropdown-toggle {
@@ -131,9 +125,6 @@ header {
     transform: translateX(-50%);
 }
 
-.navbar-toggler:focus {
-    box-shadow: none;
-}
 
 /* Offcanvas Menu */
 .offcanvas {
@@ -149,11 +140,6 @@ header {
     font-size: 1rem;
     color: var(--color-text);
     border-bottom: 1px solid var(--color-border);
-    transition: color 0.3s ease;
-}
-
-.offcanvas .nav-link:hover {
-    color: var(--color-primary);
 }
 
 .offcanvas .dropdown-menu {
@@ -170,11 +156,6 @@ header {
     color: var(--color-text-light);
     padding: 0.5rem 0;
     border-bottom: none;
-}
-
-.offcanvas .dropdown-item:hover {
-    background: transparent;
-    color: #783D44;
 }
 
 /* Hero Section */
@@ -264,18 +245,12 @@ header {
     overflow: hidden;
     margin: 0 auto 8px;
     border: 2px solid var(--color-border);
-    transition: all 0.3s ease;
 }
 
 .category-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.category-item:hover .category-img-wrapper {
-    border-color: var(--color-primary);
-    transform: scale(1.05);
 }
 
 .category-name {
@@ -312,12 +287,6 @@ header {
     font-size: 0.85rem;
     font-weight: 400;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-pill:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
 }
 
 .filter-pill.active {
@@ -364,29 +333,10 @@ header {
     font-size: 0.75rem;
 }
 
-.scroll-hint i {
-    animation: swipe-hint 1.2s ease-in-out infinite;
-}
-
 .scroll-hint .back-to-top {
     color: var(--color-text-muted);
     font-size: 0.75rem;
     text-decoration: underline;
-    transition: opacity 0.3s ease;
-}
-
-.scroll-hint .back-to-top:hover {
-    color: var(--color-text-muted);
-    opacity: 0.7;
-}
-
-@keyframes swipe-hint {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(5px);
-    }
 }
 
 .products-scroll {
@@ -419,12 +369,6 @@ header {
     background: var(--color-white);
     border-radius: 0;
     overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.product-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
 }
 
 .product-img-wrapper {
@@ -438,11 +382,6 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover .product-img-wrapper img {
-    transform: scale(1.05);
 }
 
 .wishlist-btn {
@@ -459,17 +398,8 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    opacity: 0;
-    box-shadow: var(--shadow-sm);
-}
-
-.product-card:hover .wishlist-btn {
     opacity: 1;
-}
-
-.wishlist-btn:hover {
-    color: #783D44;
-    transform: scale(1.1);
+    box-shadow: var(--shadow-sm);
 }
 
 .wishlist-btn.active {
@@ -566,12 +496,6 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    transition: gap 0.3s ease;
-}
-
-.promo-link:hover {
-    color: #fff;
-    gap: 8px;
 }
 
 .promo-img {
@@ -681,11 +605,6 @@ header {
     text-decoration: none;
 }
 
-.footer-contact a:hover {
-    color: var(--color-white);
-    text-decoration: underline;
-}
-
 /* Bottom Navigation */
 .bottom-nav {
     display: none;
@@ -699,7 +618,6 @@ header {
     color: var(--color-text-muted);
     font-size: 0.7rem;
     padding: 4px 12px;
-    transition: color 0.3s ease;
 }
 
 .bottom-nav-item i {
@@ -707,8 +625,7 @@ header {
     margin-bottom: 2px;
 }
 
-.bottom-nav-item.active,
-.bottom-nav-item:hover {
+.bottom-nav-item.active {
     color: var(--color-primary);
 }
 
@@ -717,21 +634,6 @@ header {
     object-fit: cover;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.product-card {
-    animation: fadeIn 0.5s ease forwards;
-}
 
 /* Hide scrollbar for all horizontal scrolls */
 .hide-scrollbar {
@@ -769,12 +671,6 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.back-btn:hover {
-    background-color: var(--color-bg);
-    color: var(--color-text);
 }
 
 .favourites-title {
@@ -861,11 +757,6 @@ header {
     color: var(--color-primary);
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.favourite-delete:hover {
-    background-color: var(--color-bg);
 }
 
 .favourite-delete i {
@@ -900,12 +791,6 @@ header {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    transition: background-color 0.3s ease;
-}
-
-.btn-order:hover {
-    background: #6a3640;
-    color: var(--color-white);
 }
 
 /* Adjust body padding when order button is visible */
@@ -1008,13 +893,7 @@ body.has-order-btn {
     background: var(--color-white);
     border-radius: var(--radius-md);
     text-decoration: none;
-    transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
-}
-
-.contact-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
 }
 
 .contact-card-icon {
@@ -1026,7 +905,6 @@ body.has-order-btn {
     justify-content: center;
     font-size: 1.4rem;
     flex-shrink: 0;
-    transition: all 0.3s ease;
 }
 
 .contact-card-icon.instagram {
@@ -1035,22 +913,10 @@ body.has-order-btn {
     border: 2px solid var(--color-border);
 }
 
-.contact-card:hover .contact-card-icon.instagram {
-    background: linear-gradient(135deg, #8b6b6b 0%, #a08080 100%);
-    color: white;
-    border-color: transparent;
-}
-
 .contact-card-icon.whatsapp {
     background: linear-gradient(135deg, var(--color-bg-card) 0%, #e0d4c8 100%);
     color: var(--color-secondary);
     border: 2px solid var(--color-border);
-}
-
-.contact-card:hover .contact-card-icon.whatsapp {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    color: white;
-    border-color: transparent;
 }
 
 .contact-card-content {
@@ -1074,12 +940,6 @@ body.has-order-btn {
 .contact-card-arrow {
     color: var(--color-text-muted);
     font-size: 1.25rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.contact-card:hover .contact-card-arrow {
-    transform: translateX(4px);
-    color: var(--color-primary);
 }
 
 

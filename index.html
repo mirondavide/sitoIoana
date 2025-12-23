@@ -418,28 +418,7 @@
         }
     </style>
     <script>
-        // Toggle view for all sections
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.toggle-view-btn');
-
-            toggleButtons.forEach(button => {
-                const targetId = button.getAttribute('data-target');
-                const container = document.getElementById(targetId);
-                let isCardView = false;
-
-                button.addEventListener('click', function() {
-                    isCardView = !isCardView;
-
-                    if (isCardView) {
-                        container.classList.add('card-view');
-                        button.textContent = 'Mostra meno';
-                    } else {
-                        container.classList.remove('card-view');
-                        button.textContent = 'Mostra tutto';
-                    }
-                });
-            });
-        });
+        // Toggle view functionality removed
     </script>
 </body>
 </html>
