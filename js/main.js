@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductCardClicks();
     initProductPage();
     initBackToTop();
+    initMostraTuttoButtons();
+    applyUrlFilter();
 });
 
 /**
@@ -48,6 +50,78 @@ function initFilterPills() {
             });
         });
     });
+}
+
+/**
+ * Mostra Tutto Button Functionality
+ * Navigates to shop page with the currently active filter
+ */
+function initMostraTuttoButtons() {
+    const mostraTuttoButtons = document.querySelectorAll('.toggle-view-btn');
+
+    mostraTuttoButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Find the currently active filter pill
+            const activeFilter = document.querySelector('.filter-pill.active');
+
+            if (activeFilter) {
+                const filterValue = activeFilter.dataset.filter;
+                // Navigate to shop page with the category parameter
+                window.location.href = `shop.html?category=${filterValue}`;
+            } else {
+                // If no filter is active, default to "tutti"
+                window.location.href = 'shop.html?category=tutti';
+            }
+        });
+    });
+}
+
+/**
+ * Apply URL Filter on Shop Page
+ * Reads the category parameter from URL and applies the corresponding filter
+ */
+function applyUrlFilter() {
+    // Only run on shop page
+    if (!window.location.pathname.includes('shop.html')) {
+        return;
+    }
+
+    // Get the category parameter from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+
+    if (category) {
+        // Find and click the corresponding filter pill
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const productCards = document.querySelectorAll('.product-card[data-category]');
+        const categoryTitle = document.getElementById('categoryTitle');
+
+        filterPills.forEach(pill => {
+            if (pill.dataset.filter === category) {
+                // Remove active class from all pills
+                filterPills.forEach(p => p.classList.remove('active'));
+                // Add active class to the matching pill
+                pill.classList.add('active');
+
+                // Update the category title
+                if (categoryTitle) {
+                    categoryTitle.textContent = pill.textContent;
+                }
+
+                // Filter the products
+                productCards.forEach((card, index) => {
+                    const categories = card.dataset.category || '';
+
+                    if (category === 'tutti' || categories.includes(category)) {
+                        card.style.display = '';
+                        card.style.animation = `fadeIn 0.3s ease ${index * 0.05}s forwards`;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        });
+    }
 }
 
 /**
