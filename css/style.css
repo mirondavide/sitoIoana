@@ -678,14 +678,31 @@ header {
     }
 }
 
-/* Safe area for notched devices */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-    .bottom-nav {
-        padding-bottom: calc(12px + env(safe-area-inset-bottom));
+/* Mobile bottom nav spacing */
+@media (max-width: 767.98px) {
+    body {
+        padding-bottom: 70px;
     }
 
-    body {
-        padding-bottom: calc(70px + env(safe-area-inset-bottom));
+    .footer {
+        margin-bottom: -70px;
+    }
+}
+
+/* Safe area for notched devices (mobile only) */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    @media (max-width: 767.98px) {
+        .bottom-nav {
+            padding-bottom: calc(12px + env(safe-area-inset-bottom));
+        }
+
+        body {
+            padding-bottom: calc(70px + env(safe-area-inset-bottom));
+        }
+
+        .footer {
+            margin-bottom: calc(-70px - env(safe-area-inset-bottom));
+        }
     }
 }
 
