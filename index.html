@@ -158,9 +158,12 @@
     <!-- Products Section -->
     <section class="products-section py-4">
         <div class="container">
-            <h2 class="section-title mb-3">Tutti</h2>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="section-title mb-0">Tutti</h2>
+                <button class="btn btn-link text-decoration-none p-0 toggle-view-btn" data-target="productsContainer" style="font-size: 0.9rem; white-space: nowrap; color: black;">Mostra tutto</button>
+            </div>
             <div class="products-scroll-wrapper">
-            <div class="products-scroll">
+            <div class="products-scroll" id="productsContainer">
                 <!-- Product Card 1 -->
                 <div class="product-card scroll-card" data-category="bimbo asilo" data-product-id="1" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
@@ -336,5 +339,63 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <style>
+        /* Card grid view styles */
+        .categories-scroll.card-view,
+        .filters-scroll.card-view,
+        .products-scroll.card-view,
+        .featured-scroll.card-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            overflow-x: visible;
+        }
+
+        .categories-scroll.card-view .category-item,
+        .filters-scroll.card-view .filter-pill,
+        .products-scroll.card-view .product-card,
+        .featured-scroll.card-view .product-card {
+            width: 100%;
+        }
+
+        .filters-scroll.card-view {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .categories-scroll.card-view,
+            .products-scroll.card-view,
+            .featured-scroll.card-view {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+    <script>
+        // Toggle view for all sections
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-view-btn');
+
+            toggleButtons.forEach(button => {
+                const targetId = button.getAttribute('data-target');
+                const container = document.getElementById(targetId);
+                let isCardView = false;
+
+                button.addEventListener('click', function() {
+                    isCardView = !isCardView;
+
+                    if (isCardView) {
+                        container.classList.add('card-view');
+                        button.textContent = 'Mostra meno';
+                    } else {
+                        container.classList.remove('card-view');
+                        button.textContent = 'Mostra tutto';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
