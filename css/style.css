@@ -529,8 +529,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
 }
 
 .promo-content {
@@ -558,6 +556,9 @@ header {
 }
 
 .promo-link {
+    padding: 8px 52px;
+    border-radius: var(--radius-pill);
+    background-color: rgba(255, 255, 255, 0.2);
     font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
