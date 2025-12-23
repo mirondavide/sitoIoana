@@ -535,6 +535,7 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    backdrop-filter: blur(8px);
 }
 
 .promo-img {
