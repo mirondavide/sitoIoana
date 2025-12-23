@@ -236,6 +236,13 @@ header {
     flex-shrink: 0;
     text-align: center;
     cursor: pointer;
+    transition: transform 0.2s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.category-item:active {
+    transform: scale(0.95);
 }
 
 .category-img-wrapper {
@@ -245,6 +252,12 @@ header {
     overflow: hidden;
     margin: 0 auto 8px;
     border: 2px solid var(--color-border);
+    transition: border-color 0.2s ease;
+}
+
+.category-item.active .category-img-wrapper {
+    border-color: #783D44;
+    border-width: 3px;
 }
 
 .category-img-wrapper img {
@@ -257,6 +270,12 @@ header {
     font-size: 0.75rem;
     color: var(--color-text-light);
     font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.category-item.active .category-name {
+    color: #783D44;
+    font-weight: 700;
 }
 
 /* Filters Section */
@@ -287,12 +306,20 @@ header {
     font-size: 0.85rem;
     font-weight: 400;
     cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.filter-pill:active {
+    transform: scale(0.95);
 }
 
 .filter-pill.active {
     background: #783D44;
     border-color: #783D44;
     color: var(--color-white);
+    font-weight: 500;
 }
 
 /* Products Section */
@@ -361,6 +388,18 @@ header {
 @media (min-width: 576px) {
     .scroll-card {
         width: 200px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

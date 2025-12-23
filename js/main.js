@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    initCategoryItems();
     initFilterPills();
     initWishlistButtons();
     initSmoothScroll();
@@ -17,16 +18,65 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
+ * Category Items Functionality
+ */
+function initCategoryItems() {
+    const categoryItems = document.querySelectorAll('.category-item[data-category]');
+    const productCards = document.querySelectorAll('.product-card[data-category]');
+    const sectionTitle = document.getElementById('productsSectionTitle');
+
+    categoryItems.forEach(item => {
+        item.style.cursor = 'pointer';
+
+        item.addEventListener('click', function() {
+            const category = this.dataset.category;
+            const categoryName = this.querySelector('.category-name').textContent;
+
+            // Remove active state from all categories
+            categoryItems.forEach(cat => cat.classList.remove('active'));
+
+            // Add active state to clicked category
+            this.classList.add('active');
+
+            // Update section title
+            if (sectionTitle) {
+                sectionTitle.textContent = categoryName;
+            }
+
+            // Filter products with animation
+            let visibleCount = 0;
+            productCards.forEach((card) => {
+                const categories = card.dataset.category || '';
+
+                if (categories.includes(category)) {
+                    card.style.display = '';
+                    card.style.animation = `fadeIn 0.3s ease ${visibleCount * 0.05}s forwards`;
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Haptic feedback on mobile
+            if (navigator.vibrate) {
+                navigator.vibrate(30);
+            }
+        });
+    });
+}
+
+/**
  * Filter Pills Functionality
  */
 function initFilterPills() {
     const filterPills = document.querySelectorAll('.filter-pill');
     const productCards = document.querySelectorAll('.product-card[data-category]');
-    const sectionTitle = document.querySelector('.products-section .section-title');
+    const sectionTitle = document.getElementById('productsSectionTitle') || document.querySelector('.products-section .section-title');
+    const categoryItems = document.querySelectorAll('.category-item[data-category]');
 
     filterPills.forEach(pill => {
         pill.addEventListener('click', function() {
-            // Update active state
+            // Update active state on filter pills
             filterPills.forEach(p => p.classList.remove('active'));
             this.classList.add('active');
 
@@ -37,39 +87,56 @@ function initFilterPills() {
                 sectionTitle.textContent = this.textContent;
             }
 
+            // Update active state on corresponding category
+            categoryItems.forEach(cat => cat.classList.remove('active'));
+            const matchingCategory = document.querySelector(`.category-item[data-category="${filter}"]`);
+            if (matchingCategory) {
+                matchingCategory.classList.add('active');
+            } else if (filter === 'tutti') {
+                // Remove all active states when "tutti" is selected
+                categoryItems.forEach(cat => cat.classList.remove('active'));
+            }
+
             // Filter products with animation
+            let visibleCount = 0;
             productCards.forEach((card, index) => {
                 const categories = card.dataset.category || '';
 
                 if (filter === 'tutti' || categories.includes(filter)) {
                     card.style.display = '';
-                    card.style.animation = `fadeIn 0.3s ease ${index * 0.05}s forwards`;
+                    card.style.animation = `fadeIn 0.3s ease ${visibleCount * 0.05}s forwards`;
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
             });
+
+            // Haptic feedback on mobile
+            if (navigator.vibrate) {
+                navigator.vibrate(30);
+            }
         });
     });
 }
 
 /**
  * Mostra Tutto Button Functionality
- * Navigates to shop page with the currently active filter
+ * Navigates to shop page with the currently active category
  */
 function initMostraTuttoButtons() {
     const mostraTuttoButtons = document.querySelectorAll('.toggle-view-btn');
 
     mostraTuttoButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Find the currently active filter pill
-            const activeFilter = document.querySelector('.filter-pill.active');
+            // Find the currently active category
+            const activeCategory = document.querySelector('.category-item.active');
 
-            if (activeFilter) {
-                const filterValue = activeFilter.dataset.filter;
+            if (activeCategory) {
+                const categoryValue = activeCategory.dataset.category;
                 // Navigate to shop page with the category parameter
-                window.location.href = `shop.html?category=${filterValue}`;
+                window.location.href = `shop.html?category=${categoryValue}`;
             } else {
-                // If no filter is active, default to "tutti"
+                // If no category is active, default to "tutti"
                 window.location.href = 'shop.html?category=tutti';
             }
         });
