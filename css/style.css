@@ -470,20 +470,20 @@ header {
     z-index: 2;
     padding: 24px;
     text-align: right;
-    width: 60%;
+    width: 72%;
     margin-left: auto;
 }
 
 .promo-brand {
     font-family: var(--font-heading);
-    font-size: 2.25rem;
+    font-size: 2.375rem;
     font-weight: 500;
     color: #fff;
     margin-bottom: 8px;
 }
 
 .promo-text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 12px;
     line-height: 1.5;
