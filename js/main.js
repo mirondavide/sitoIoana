@@ -473,7 +473,7 @@ function initFavouritesOrderButton() {
             `${productsList}\n\n` +
             `Vorrei avere maggiori informazioni!`;
 
-        const phoneNumber = '393792106196';
+        const phoneNumber = '393202615110';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     });
