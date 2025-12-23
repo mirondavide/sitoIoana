@@ -4,7 +4,7 @@
 
 /* CSS Variables */
 :root {
-    --color-primary: #8b7355;
+    --color-primary: #783D44;
     --color-secondary: #a69076;
     --color-accent: #c4a77d;
     --color-bg: white;
@@ -892,7 +892,7 @@ header {
 .btn-order {
     display: block;
     width: 100%;
-    background: #8b6b6b;
+    background: #783D44;
     color: var(--color-white);
     text-align: center;
     padding: 16px 24px;
@@ -904,7 +904,7 @@ header {
 }
 
 .btn-order:hover {
-    background: #7a5a5a;
+    background: #6a3640;
     color: var(--color-white);
 }
 
