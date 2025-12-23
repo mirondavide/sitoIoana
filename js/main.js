@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFavouritesPage();
     initProductCardClicks();
     initProductPage();
+    initBackToTop();
 });
 
 /**
@@ -451,6 +452,23 @@ function initProductPage() {
         // Update page title
         document.title = product.name + ' - Fabian';
     }
+}
+
+/**
+ * Back to Top Functionality
+ */
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+
+    if (!backToTopBtn) return;
+
+    backToTopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 }
 
 // Expose functions globally if needed

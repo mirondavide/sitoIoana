@@ -55,7 +55,7 @@
         }
 
         .product-content {
-            padding: 24px 20px;
+            padding: 24px 20px 0;
             background: var(--color-bg);
         }
 
@@ -149,11 +149,32 @@
             font-weight: 400;
         }
 
+        .product-note {
+            margin-top: 24px;
+        }
+
+        .product-note h4 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 8px;
+        }
+
+        .product-note p {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: #783D44;
+            line-height: 1.6;
+            margin: 0;
+        }
+
         @media (min-width: 768px) {
             .product-content {
                 max-width: 600px;
                 margin: 0 auto;
-                padding: 32px 24px;
+                padding: 32px 24px 0;
             }
 
             .product-title-main {
@@ -296,6 +317,11 @@
                     <span class="spec-value">9cm</span>
                 </li>
             </ul>
+
+            <div class="product-note">
+                <h4>Nota</h4>
+                <p>I prezzi possono variare in base alla grandezza, complessità e numero di colori utilizzati sul ricamo.</p>
+            </div>
         </div>
     </div>
 
