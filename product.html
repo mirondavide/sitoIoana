@@ -302,7 +302,7 @@
     <!-- Action Buttons Section -->
     <section class="product-actions-section py-4">
         <div class="container">
-            <a href="#" class="btn-order mb-3" id="orderProductBtn">Fai un ordine!</a>
+            <a href="#" class="btn-order mb-2" id="orderProductBtn">Fai un ordine!</a>
             <a href="favourites.html" class="btn-favourites">Vedi tutti gli articoli preferiti</a>
         </div>
     </section>
@@ -315,6 +315,7 @@
                 <div class="product-card suggestion-card" data-product-id="101" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Set asilo">
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Set asilo</h3>
@@ -324,6 +325,7 @@
                 <div class="product-card suggestion-card" data-product-id="102" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Set asilo">
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Set asilo</h3>
@@ -333,6 +335,7 @@
                 <div class="product-card suggestion-card" data-product-id="103" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Set asilo">
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Set asilo</h3>
@@ -342,6 +345,7 @@
                 <div class="product-card suggestion-card" data-product-id="104" data-product-name="Set asilo" data-product-price="90.00" data-product-image="img/fabian.png">
                     <div class="product-img-wrapper">
                         <img src="img/fabian.png" alt="Set asilo">
+                        <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Set asilo</h3>
@@ -392,16 +396,134 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+        // Get favourites functions from main.js
+        function getFavourites() {
+            const favourites = localStorage.getItem('fabian_favourites');
+            return favourites ? JSON.parse(favourites) : [];
+        }
+
+        function saveFavourites(favourites) {
+            localStorage.setItem('fabian_favourites', JSON.stringify(favourites));
+        }
+
+        function addToFavourites(product) {
+            const favourites = getFavourites();
+            if (!favourites.find(f => f.id === product.id)) {
+                favourites.push(product);
+                saveFavourites(favourites);
+            }
+        }
+
+        function removeFromFavourites(productId) {
+            const favourites = getFavourites();
+            const updated = favourites.filter(f => f.id !== productId);
+            saveFavourites(updated);
+        }
+
+        function isFavourite(productId) {
+            const favourites = getFavourites();
+            return favourites.some(f => f.id === productId);
+        }
+
+        function showToast(message) {
+            const existingToast = document.querySelector('.toast-notification');
+            if (existingToast) {
+                existingToast.remove();
+            }
+
+            const toast = document.createElement('div');
+            toast.className = 'toast-notification';
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 90px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #333;
+                color: white;
+                padding: 12px 24px;
+                border-radius: 25px;
+                font-size: 0.85rem;
+                z-index: 2000;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            `;
+
+            document.body.appendChild(toast);
+
+            requestAnimationFrame(() => {
+                toast.style.opacity = '1';
+            });
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+        }
+
+        // Get current product info
+        function getCurrentProductInfo() {
+            const productData = localStorage.getItem('fabian_current_product');
+            if (productData) {
+                return JSON.parse(productData);
+            }
+
+            // Fallback: get from page content
+            const productName = document.querySelector('.product-title-main')?.textContent || 'Prodotto';
+            const productPrice = document.querySelector('.product-price-main')?.textContent.replace('€', '').trim() || '0.00';
+            const productImage = document.querySelector('.product-image-container img')?.src || 'img/fabian.png';
+            const productCategory = document.querySelector('.product-category')?.textContent || 'Prodotto';
+
+            return {
+                id: 'product-' + Date.now(), // Generate unique ID if not available
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                type: productCategory
+            };
+        }
+
+        // Restore favorite state on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const product = getCurrentProductInfo();
+            const favoriteBtn = document.getElementById('favoriteBtn');
+            const icon = favoriteBtn?.querySelector('i');
+
+            if (favoriteBtn && icon && isFavourite(product.id)) {
+                favoriteBtn.classList.add('active');
+                icon.classList.remove('bi-heart');
+                icon.classList.add('bi-heart-fill');
+            }
+        });
+
         // Toggle favorite button
         document.getElementById('favoriteBtn').addEventListener('click', function() {
+            const product = getCurrentProductInfo();
+
             this.classList.toggle('active');
             const icon = this.querySelector('i');
+
             if (this.classList.contains('active')) {
                 icon.classList.remove('bi-heart');
                 icon.classList.add('bi-heart-fill');
+
+                // Add to favourites
+                addToFavourites(product);
+
+                // Haptic feedback on mobile (if supported)
+                if (navigator.vibrate) {
+                    navigator.vibrate(50);
+                }
+
+                showToast('Aggiunto ai preferiti');
             } else {
                 icon.classList.remove('bi-heart-fill');
                 icon.classList.add('bi-heart');
+
+                // Remove from favourites
+                removeFromFavourites(product.id);
+
+                showToast('Rimosso dai preferiti');
             }
         });
 
