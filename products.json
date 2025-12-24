@@ -83,10 +83,7 @@
       "name": "Sacca Matei",
       "price": "120.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/saccaMatei.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": false,
@@ -101,11 +98,7 @@
       "name": "Asciugamano Matei",
       "price": "12.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/mateiAsciugamano.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -120,12 +113,7 @@
       "name": "Zaino Matei",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/zainoMatei.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -200,16 +188,11 @@
       "name": "Asciugamano Sara",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/asciugamoSara.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -221,16 +204,11 @@
       "name": "Asciugamano  Marco",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/asciugamanoMarco.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -242,16 +220,11 @@
       "name": "Asciugamano Matilde",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/asciugamanoMatilde.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -263,16 +236,11 @@
       "name": "Bavaglino Sara",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/bavaglinoSara.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -284,16 +252,11 @@
       "name": "Bavaglino Marco",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/bavaglinoMarco.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -305,16 +268,11 @@
       "name": "Bavaglino Matilde",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/bavaglinoMatilde.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -335,7 +293,7 @@
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -356,7 +314,7 @@
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -377,7 +335,7 @@
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -398,7 +356,7 @@
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -419,7 +377,7 @@
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
@@ -440,7 +398,7 @@
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
-      "description": "Set completo per bambina",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
