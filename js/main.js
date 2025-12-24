@@ -11,6 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
+ * Validate product images structure
+ */
+function validateProductImages(product) {
+    if (!product.images || !Array.isArray(product.images)) {
+        console.warn(`Product "${product.name}" (ID: ${product.id}) has no images array`);
+        return false;
+    }
+
+    if (product.images.length < 1) {
+        console.warn(`Product "${product.name}" (ID: ${product.id}) has no images`);
+        return false;
+    }
+
+    return true;
+}
+
+/**
  * Load products from products.json
  */
 async function loadProducts() {
@@ -18,6 +35,11 @@ async function loadProducts() {
         const response = await fetch('products.json');
         const data = await response.json();
         allProducts = data.products;
+
+        // Validate all products
+        allProducts.forEach(product => {
+            validateProductImages(product);
+        });
 
         // Render products on the page
         renderProducts();
@@ -82,13 +104,13 @@ function createProductCard(product, extraClass = '', isFeatured = false) {
     card.dataset.productId = product.id;
     card.dataset.productName = product.name;
     card.dataset.productPrice = product.price;
-    card.dataset.productImage = product.image;
+    card.dataset.productImage = product.images?.[0] || 'img/fabian.png';
 
     const badgeHTML = isFeatured ? '<span class="badge-bestseller">Bestseller</span>' : '';
 
     card.innerHTML = `
         <div class="product-img-wrapper">
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.images?.[0] || 'img/fabian.png'}" alt="${product.name}">
             ${badgeHTML}
             <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
         </div>
@@ -349,11 +371,12 @@ function initWishlistButtons() {
                 icon.classList.add('bi-heart-fill');
 
                 // Save product to favourites
+                const fullProduct = allProducts.find(p => p.id === productId);
                 const product = {
                     id: productId,
                     name: card.dataset.productName,
                     price: card.dataset.productPrice,
-                    image: card.dataset.productImage,
+                    images: fullProduct?.images || [card.dataset.productImage],
                     type: card.dataset.productType || 'Zainetto'
                 };
                 addToFavourites(product);
@@ -570,7 +593,7 @@ function createFavouriteItem(product) {
 
     item.innerHTML = `
         <div class="favourite-img">
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${product.images?.[0] || product.image || 'img/fabian.png'}" alt="${product.name}">
         </div>
         <div class="favourite-info">
             <h3 class="favourite-name">${product.name}</h3>
@@ -618,11 +641,18 @@ function initProductCardClicks() {
             // Don't navigate if clicking the wishlist button
             if (e.target.closest('.wishlist-btn')) return;
 
+            const productId = this.dataset.productId;
+            const fullProduct = allProducts.find(p => p.id === productId);
+
+            if (!fullProduct) return;
+
             const product = {
-                id: this.dataset.productId,
-                name: this.dataset.productName,
-                price: this.dataset.productPrice,
-                image: this.dataset.productImage,
+                id: fullProduct.id,
+                name: fullProduct.name,
+                price: fullProduct.price,
+                images: fullProduct.images || ['img/fabian.png'],
+                description: fullProduct.description || '',
+                specs: fullProduct.specs || {},
                 category: this.dataset.category || ''
             };
 
@@ -641,8 +671,8 @@ function initProductCardClicks() {
 function initProductPage() {
     const productTitle = document.querySelector('.product-title-main');
     const productPrice = document.querySelector('.product-price-main');
-    const productImage = document.querySelector('.product-image-container img');
     const productCategory = document.querySelector('.product-category');
+    const productDescription = document.querySelector('.product-description-text');
 
     // Only run on product page
     if (!productTitle || !productPrice) return;
@@ -653,12 +683,68 @@ function initProductPage() {
 
         productTitle.textContent = product.name;
         productPrice.textContent = '€ ' + product.price;
-        if (productImage) {
-            productImage.src = product.image;
-            productImage.alt = product.name;
-        }
         if (productCategory && product.category) {
             productCategory.textContent = product.category.split(' ')[0] || 'Prodotto';
+        }
+        if (productDescription && product.description) {
+            productDescription.textContent = product.description;
+        }
+
+        // Populate product specs
+        if (product.specs) {
+            const specAltezza = document.querySelector('.spec-altezza');
+            const specLarghezza = document.querySelector('.spec-larghezza');
+            const specProfondita = document.querySelector('.spec-profondita');
+
+            if (specAltezza && product.specs.altezza) {
+                specAltezza.textContent = product.specs.altezza;
+            }
+            if (specLarghezza && product.specs.larghezza) {
+                specLarghezza.textContent = product.specs.larghezza;
+            }
+            if (specProfondita && product.specs.profondita) {
+                specProfondita.textContent = product.specs.profondita;
+            }
+        }
+
+        // Dynamically populate carousel with images
+        const carouselInner = document.querySelector('#productCarousel .carousel-inner');
+        const carouselIndicators = document.querySelector('#productCarousel .carousel-indicators');
+        const images = product.images || ['img/fabian.png'];
+
+        if (carouselInner) {
+            // Clear existing items
+            carouselInner.innerHTML = '';
+
+            // Create carousel items
+            images.forEach((imagePath, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.className = `carousel-item${index === 0 ? ' active' : ''}`;
+                carouselItem.innerHTML = `
+                    <div class="product-image-container">
+                        <img src="${imagePath}" alt="${product.name} - Immagine ${index + 1} di ${images.length}">
+                    </div>
+                `;
+                carouselInner.appendChild(carouselItem);
+            });
+        }
+
+        if (carouselIndicators && images.length > 1) {
+            // Clear existing indicators
+            carouselIndicators.innerHTML = '';
+
+            // Create indicators
+            images.forEach((_, index) => {
+                const indicator = document.createElement('button');
+                indicator.type = 'button';
+                indicator.setAttribute('data-bs-target', '#productCarousel');
+                indicator.setAttribute('data-bs-slide-to', index.toString());
+                if (index === 0) indicator.className = 'active';
+                carouselIndicators.appendChild(indicator);
+            });
+        } else if (carouselIndicators && images.length === 1) {
+            // Hide indicators if only 1 image
+            carouselIndicators.style.display = 'none';
         }
 
         // Update page title

@@ -4,82 +4,173 @@
       "id": "1",
       "name": "Set asilo",
       "price": "90.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimbo", "asilo"],
       "featured": false,
-      "description": "Set completo per l'asilo"
+      "description": "Set completo per l'ioana",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm",
+        "profondita": "9cm"
+      }
     },
     {
       "id": "2",
       "name": "Set asilo deluxe",
       "price": "90.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimbo", "asilo"],
       "featured": false,
-      "description": "Set asilo versione deluxe"
+      "description": "Set asilo versione deluxe",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm",
+        "profondita": "9cm"
+      }
     },
     {
       "id": "3",
       "name": "Zaino scuola",
       "price": "75.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimba", "regalo"],
       "featured": false,
-      "description": "Zaino perfetto per la scuola"
+      "description": "Zaino perfetto per la scuola",
+      "specs": {
+        "altezza": "30cm",
+        "larghezza": "25cm",
+        "profondita": "10cm"
+      }
     },
     {
       "id": "4",
       "name": "Set pranzo",
       "price": "45.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimbo", "cucina"],
       "featured": false,
-      "description": "Set completo per il pranzo"
+      "description": "Set completo per il pranzo",
+      "specs": {
+        "altezza": "15cm",
+        "larghezza": "20cm",
+        "profondita": "8cm"
+      }
     },
     {
       "id": "5",
       "name": "Borsetta",
       "price": "55.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimba", "asilo"],
       "featured": false,
-      "description": "Borsetta elegante per bambina"
+      "description": "Borsetta elegante per bambina",
+      "specs": {
+        "altezza": "20cm",
+        "larghezza": "18cm",
+        "profondita": "7cm"
+      }
     },
     {
       "id": "6",
       "name": "Set regalo",
       "price": "120.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["regalo"],
       "featured": false,
-      "description": "Set regalo completo"
+      "description": "Set regalo completo",
+      "specs": {
+        "altezza": "25cm",
+        "larghezza": "22cm",
+        "profondita": "9cm"
+      }
     },
     {
       "id": "7",
       "name": "Zaino tartaruga",
       "price": "85.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimbo"],
       "featured": true,
-      "description": "Zaino con design tartaruga"
+      "description": "Zaino con design tartaruga",
+      "specs": {
+        "altezza": "28cm",
+        "larghezza": "23cm",
+        "profondita": "10cm"
+      }
     },
     {
       "id": "8",
       "name": "Set completo",
       "price": "110.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": ["bimba"],
       "featured": true,
-      "description": "Set completo per bambina"
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm",
+        "profondita": "9cm"
+      }
     },
     {
       "id": "9",
       "name": "Borraccia",
       "price": "25.00",
-      "image": "img/fabian.png",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
       "categories": [],
       "featured": true,
-      "description": "Borraccia termica"
+      "description": "Borraccia termica",
+      "specs": {
+        "altezza": "22cm",
+        "larghezza": "7cm",
+        "profondita": "7cm"
+      }
     }
   ]
 }

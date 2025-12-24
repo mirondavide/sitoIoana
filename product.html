@@ -294,37 +294,15 @@
     </div>
 
     <!-- Product Image Carousel -->
-    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="product-image-container">
-                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="product-image-container">
-                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 2">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="product-image-container">
-                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 3">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="product-image-container">
-                    <img src="img/fabian.png" alt="Fabian - Zainetto personalizzato 4">
-                </div>
-            </div>
+            <!-- Carousel items will be dynamically populated by JavaScript -->
         </div>
         <button class="favorite-btn" id="favoriteBtn">
             <i class="bi bi-heart"></i>
         </button>
         <div class="carousel-indicators custom-indicators">
-            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"></button>
+            <!-- Indicators will be dynamically populated by JavaScript -->
         </div>
     </div>
 
@@ -339,7 +317,7 @@
 
         <div class="product-description-section">
             <h3>Descrizione</h3>
-            <p>Sed Dignissim, Metus Nec Fringilla Accumsan, Risus Sem Sollicitudin Lacus, Ut Interdum Tellus Elit Sed Risus. Maecenas Eget Condimentum Velit, Sit Amet Feugiat Lectus.</p>
+            <p class="product-description-text">Descrizione del prodotto</p>
         </div>
 
         <div class="product-details-section">
@@ -347,15 +325,15 @@
             <ul class="product-specs">
                 <li>
                     <span class="spec-label">Altezza</span>
-                    <span class="spec-value">27cm</span>
+                    <span class="spec-value spec-altezza">27cm</span>
                 </li>
                 <li>
                     <span class="spec-label">Larghezza</span>
-                    <span class="spec-value">24cm</span>
+                    <span class="spec-value spec-larghezza">24cm</span>
                 </li>
                 <li>
                     <span class="spec-label">Profondità</span>
-                    <span class="spec-value">9cm</span>
+                    <span class="spec-value spec-profondita">9cm</span>
                 </li>
             </ul>
 
