@@ -47,24 +47,6 @@
     },
     {
       "id": "4",
-      "name": "Set Annalisa",
-      "price": "37.00",
-      "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
-      ],
-      "categories": ["asilo", "bimba"],
-      "featured": false,
-      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro set asilo personalizzabile è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così accessori unici e speciali per lui.",
-      "specs": {
-        "altezza": "15cm",
-        "larghezza": "20cm"
-      }
-    },
-    {
-      "id": "5",
       "name": "Bavagliolo Matei",
       "price": "55.00",
       "images": [
@@ -79,7 +61,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "5",
       "name": "Sacca Matei",
       "price": "120.00",
       "images": [
@@ -94,7 +76,7 @@
       }
     },
     {
-      "id": "7",
+      "id": "6",
       "name": "Asciugamano Matei",
       "price": "12.00",
       "images": [
@@ -109,7 +91,7 @@
       }
     },
     {
-      "id": "8",
+      "id": "7",
       "name": "Zaino Matei",
       "price": "110.00",
       "images": [
@@ -124,7 +106,7 @@
       }
     },
     {
-      "id": "9",
+      "id": "8",
       "name": "Set Matei",
       "price": "25.00",
       "images": [
@@ -143,16 +125,15 @@
       }
     },
     {
-      "id": "10",
+      "id": "9",
       "name": "Set Matilde",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/primoMatilde.png",
+        "img/secondoMatilde.png",
+        "img/quintoMatilde.png",
+        "img/quartoMatilde.png",
+        "img/terzoMatilde.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -164,16 +145,15 @@
     }
     ,
     {
-      "id": "11",
+      "id": "10",
       "name": "Set Marco",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/primoMarco.png",
+        "img/secondoMarco.png",
+        "img/terzaMarco.png",
+        "img/quartaMarco.png",
+        "img/quintaMarco.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -185,7 +165,7 @@
     }
     ,
     {
-      "id": "12",
+      "id": "11",
       "name": "Asciugamano Sara",
       "price": "110.00",
       "images": [
@@ -201,7 +181,7 @@
     }
     ,
     {
-      "id": "13",
+      "id": "12",
       "name": "Asciugamano  Marco",
       "price": "110.00",
       "images": [
@@ -217,7 +197,7 @@
     }
     ,
     {
-      "id": "14",
+      "id": "13",
       "name": "Asciugamano Matilde",
       "price": "110.00",
       "images": [
@@ -233,7 +213,7 @@
     }
     ,
     {
-      "id": "15",
+      "id": "14",
       "name": "Bavaglino Sara",
       "price": "110.00",
       "images": [
@@ -249,7 +229,7 @@
     }
     ,
     {
-      "id": "16",
+      "id": "15",
       "name": "Bavaglino Marco",
       "price": "110.00",
       "images": [
@@ -265,7 +245,7 @@
     }
     ,
     {
-      "id": "17",
+      "id": "16",
       "name": "Bavaglino Matilde",
       "price": "110.00",
       "images": [
@@ -281,7 +261,7 @@
     }
     ,
     {
-      "id": "18",
+      "id": "17",
       "name": "Sacca Sara",
       "price": "110.00",
       "images": [
@@ -298,7 +278,7 @@
     }
     ,
     {
-      "id": "19",
+      "id": "18",
       "name": "Sacca Marco",
       "price": "110.00",
       "images": [
@@ -315,7 +295,7 @@
     }
     ,
     {
-      "id": "20",
+      "id": "19",
       "name": "Sacca Matilde",
       "price": "110.00",
       "images": [
@@ -332,7 +312,7 @@
     }
     ,
     {
-      "id": "21",
+      "id": "20",
       "name": "Zaino Sara",
       "price": "110.00",
       "images": [
@@ -348,7 +328,7 @@
     }
     ,
     {
-      "id": "22",
+      "id": "21",
       "name": "Zaino Marco",
       "price": "110.00",
       "images": [
@@ -364,7 +344,7 @@
     }
     ,
     {
-      "id": "23",
+      "id": "22",
       "name": "Zaino Matilde",
       "price": "110.00",
       "images": [
