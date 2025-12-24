@@ -2,8 +2,8 @@
   "products": [
     {
       "id": "1",
-      "name": "Set asilo",
-      "price": "90.00",
+      "name": "Astuccio Ilaria",
+      "price": "18.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png",
@@ -11,72 +11,68 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimbo", "asilo"],
+      "categories": ["asilo", "bimba"],
       "featured": false,
-      "description": "Set completo per l'ioana",
+      "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
-        "altezza": "27cm",
-        "larghezza": "24cm",
-        "profondita": "9cm"
+        "altezza": "29cm",
+        "larghezza": "18cm"
       }
     },
     {
       "id": "2",
-      "name": "Set asilo deluxe",
-      "price": "90.00",
+      "name": "Astuccio Marika",
+      "price": "18.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimbo", "asilo"],
+      "categories": ["asilo", "bimba"],
       "featured": false,
-      "description": "Set asilo versione deluxe",
+      "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
-        "altezza": "27cm",
-        "larghezza": "24cm",
-        "profondita": "9cm"
+        "altezza": "29cm",
+        "larghezza": "18cm"
       }
     },
     {
       "id": "3",
-      "name": "Zaino scuola",
-      "price": "75.00",
+      "name": "Astuccio Claudia",
+      "price": "18.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimba", "regalo"],
+      "categories": ["asilo", "bimba"],
       "featured": false,
-      "description": "Zaino perfetto per la scuola",
+      "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
-        "altezza": "30cm",
-        "larghezza": "25cm",
-        "profondita": "10cm"
+        "altezza": "29cm",
+        "larghezza": "18cm"
       }
     },
     {
       "id": "4",
-      "name": "Set pranzo",
-      "price": "45.00",
+      "name": "Set Annalisa",
+      "price": "37.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png",
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimbo", "cucina"],
+      "categories": ["asilo", "bimba"],
       "featured": false,
-      "description": "Set completo per il pranzo",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro set asilo personalizzabile è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così accessori unici e speciali per lui.",
       "specs": {
         "altezza": "15cm",
-        "larghezza": "20cm",
-        "profondita": "8cm"
+        "larghezza": "20cm"
       }
     },
     {
       "id": "5",
-      "name": "Borsetta",
+      "name": "Bavagliolo Matei",
       "price": "55.00",
       "images": [
         "img/fabian.png",
@@ -84,18 +80,17 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimba", "asilo"],
+      "categories": ["asilo", "bimbo"],
       "featured": false,
       "description": "Borsetta elegante per bambina",
       "specs": {
         "altezza": "20cm",
-        "larghezza": "18cm",
-        "profondita": "7cm"
+        "larghezza": "18cm"
       }
     },
     {
       "id": "6",
-      "name": "Set regalo",
+      "name": "Sacca Matei",
       "price": "120.00",
       "images": [
         "img/fabian.png",
@@ -103,19 +98,18 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["regalo"],
+      "categories": ["asilo", "bimbo"],
       "featured": false,
       "description": "Set regalo completo",
       "specs": {
         "altezza": "25cm",
-        "larghezza": "22cm",
-        "profondita": "9cm"
+        "larghezza": "22cm"
       }
     },
     {
       "id": "7",
-      "name": "Zaino tartaruga",
-      "price": "85.00",
+      "name": "Asciugamano Matei",
+      "price": "12.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png",
@@ -123,18 +117,17 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimbo"],
+      "categories": ["asilo", "bimbo"],
       "featured": true,
-      "description": "Zaino con design figo",
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "28cm",
-        "larghezza": "23cm",
-        "profondita": "10cm"
+        "larghezza": "23cm"
       }
     },
     {
       "id": "8",
-      "name": "Set completo",
+      "name": "Zaino Matei",
       "price": "110.00",
       "images": [
         "img/fabian.png",
@@ -144,18 +137,17 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": ["bimba"],
+      "categories": ["asilo", "bimbo"],
       "featured": true,
       "description": "Set completo per bambina",
       "specs": {
         "altezza": "27cm",
-        "larghezza": "24cm",
-        "profondita": "9cm"
+        "larghezza": "24cm"
       }
     },
     {
       "id": "9",
-      "name": "Borraccia",
+      "name": "Set Matei",
       "price": "25.00",
       "images": [
         "img/fabian.png",
@@ -163,14 +155,610 @@
         "img/fabian.png",
         "img/fabian.png"
       ],
-      "categories": [],
+      "categories": ["asilo", "bimbo"],
       "featured": true,
       "description": "Borraccia termica",
       "specs": {
         "altezza": "22cm",
-        "larghezza": "7cm",
-        "profondita": "7cm"
+        "larghezza": "7cm"
       }
+    },
+    {
+      "id": "10",
+      "name": "Set Matilde",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "11",
+      "name": "Set Marco",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimbo"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "12",
+      "name": "Asciugamano Sara",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "13",
+      "name": "Asciugamano  Marco",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimbo"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "14",
+      "name": "Asciugamano Matilde",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "15",
+      "name": "Bavaglino Sara",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "16",
+      "name": "Bavaglino Marco",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimbo"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "17",
+      "name": "Bavaglino Matilde",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "18",
+      "name": "Sacca Sara",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "19",
+      "name": "Sacca Marco",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimbo"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "20",
+      "name": "Sacca Matilde",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "21",
+      "name": "Zaino Sara",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "22",
+      "name": "Zaino Marco",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimbo"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    }
+    ,
+    {
+      "id": "23",
+      "name": "Zaino Matilde",
+      "price": "110.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["asilo", "bimba"],
+      "featured": true,
+      "description": "Set completo per bambina",
+      "specs": {
+        "altezza": "27cm",
+        "larghezza": "24cm"
+      }
+    },
+    {
+      "id": "23",
+      "name": "Sebastian",
+      "price": "28.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Il nostro cavallino dondolante personalizzabile è un giocattolo irresistibile per i piccoli amanti dei cavalli. Scegli il colore che preferisci e aggiungi un nome sul collare per un tocco speciale. Questo giocattolo è perfetto per stimolare l'immaginazione dei bambini e garantire ore di divertimento sicuro."
+    },
+    {
+      "id": "24",
+      "name": "Vladimir",
+      "price": "49.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
+    },
+    {
+      "id": "25",
+      "name": "Diego",
+      "price": "49.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
+    },
+    {
+      "id": "26",
+      "name": "Cuoricino Emma",
+      "price": "42.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Questo prezioso regalo di nascita, impreziosito dal nome del neonato finemente ricamato, è anche completamente personalizzabile, aggiungendo un tocco unico e speciale. Avvolto in cotone soffice, questo morbido dono non solo offre calore e comfort, ma rappresenta anche un ricordo indimenticabile della gioiosa occasione. Un gesto affettuoso e pensato con cura, pronto a creare momenti di dolcezza e tenerezza per tutta la vita."
+    },
+    {
+      "id": "27",
+      "name": "Susy",
+      "price": "25.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "28",
+      "name": "Versetto",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "29",
+      "name": "Salmo 37:5",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "30",
+      "name": "Benedizione",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "31",
+      "name": "Proverbi 3:6",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "32",
+      "name": "Giobbe 11:13",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "33",
+      "name": "Giobbe 11:13",
+      "price": "20.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "34",
+      "name": "Luna Emma",
+      "price": "42.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "35",
+      "name": "Nuvoletta Emma",
+      "price": "42.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
+    },
+    {
+      "id": "36",
+      "name": "Thea",
+      "price": "35.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
+    },
+    {
+      "id": "37",
+      "name": "Mario",
+      "price": "35.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
+    },
+    {
+      "id": "38",
+      "name": "Thea",
+      "price": "35.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Peluche tenerissimo, accompagnato da  vivaci palloncini. Potrai personalizzare i palloncini con le lettere del tuo nome per renderlo unico. Con un'espressione tenera e dettagli curati, questo pupazzo è pronto a portare allegria e dolcezza nella tua vita. Un compagno perfetto per chi ama la magia dei palloncini e l'abbraccio caldo di un orsetto di peluche."
+    },
+    {
+      "id": "39",
+      "name": "Ghirlanda",
+      "price": "35.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Una ghirlanda personalizzabile che ti permette di esprimere la tua creatività! Con colori, materiali e decorazioni a tua scelta, questa ghirlanda diventa un'opera d'arte unica. Perfetta per decorare la porta d'ingresso, la casa o qualsiasi spazio speciale. Un regalo originale e personalizzato per te o per qualcun altro!"
+    },
+    {
+      "id": "40",
+      "name": "Stella e nuvola",
+      "price": "18.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
+    },
+    {
+      "id": "41",
+      "name": "Stella e nuvola",
+      "price": "18.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["regali"],
+      "featured": true,
+      "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     }
   ]
 }
