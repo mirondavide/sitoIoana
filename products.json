@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Set asilo",
+      "price": "90.00",
+      "image": "img/fabian.png",
+      "categories": ["bimbo", "asilo"],
+      "featured": false,
+      "description": "Set completo per l'asilo"
+    },
+    {
+      "id": "2",
+      "name": "Set asilo deluxe",
+      "price": "90.00",
+      "image": "img/fabian.png",
+      "categories": ["bimbo", "asilo"],
+      "featured": false,
+      "description": "Set asilo versione deluxe"
+    },
+    {
+      "id": "3",
+      "name": "Zaino scuola",
+      "price": "75.00",
+      "image": "img/fabian.png",
+      "categories": ["bimba", "regalo"],
+      "featured": false,
+      "description": "Zaino perfetto per la scuola"
+    },
+    {
+      "id": "4",
+      "name": "Set pranzo",
+      "price": "45.00",
+      "image": "img/fabian.png",
+      "categories": ["bimbo", "cucina"],
+      "featured": false,
+      "description": "Set completo per il pranzo"
+    },
+    {
+      "id": "5",
+      "name": "Borsetta",
+      "price": "55.00",
+      "image": "img/fabian.png",
+      "categories": ["bimba", "asilo"],
+      "featured": false,
+      "description": "Borsetta elegante per bambina"
+    },
+    {
+      "id": "6",
+      "name": "Set regalo",
+      "price": "120.00",
+      "image": "img/fabian.png",
+      "categories": ["regalo"],
+      "featured": false,
+      "description": "Set regalo completo"
+    },
+    {
+      "id": "7",
+      "name": "Zaino tartaruga",
+      "price": "85.00",
+      "image": "img/fabian.png",
+      "categories": ["bimbo"],
+      "featured": true,
+      "description": "Zaino con design tartaruga"
+    },
+    {
+      "id": "8",
+      "name": "Set completo",
+      "price": "110.00",
+      "image": "img/fabian.png",
+      "categories": ["bimba"],
+      "featured": true,
+      "description": "Set completo per bambina"
+    },
+    {
+      "id": "9",
+      "name": "Borraccia",
+      "price": "25.00",
+      "image": "img/fabian.png",
+      "categories": [],
+      "featured": true,
+      "description": "Borraccia termica"
+    }
+  ]
+}

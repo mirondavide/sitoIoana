@@ -3,19 +3,103 @@
  * Mobile-first functionality
  */
 
+// Global products array
+let allProducts = [];
+
 document.addEventListener('DOMContentLoaded', function() {
-    initCategoryItems();
-    initFilterPills();
-    initWishlistButtons();
-    initSmoothScroll();
-    restoreFavouritesState();
-    initFavouritesPage();
-    initProductCardClicks();
-    initProductPage();
-    initBackToTop();
-    initMostraTuttoButtons();
-    applyUrlFilter();
+    loadProducts();
 });
+
+/**
+ * Load products from products.json
+ */
+async function loadProducts() {
+    try {
+        const response = await fetch('products.json');
+        const data = await response.json();
+        allProducts = data.products;
+
+        // Render products on the page
+        renderProducts();
+
+        // Initialize all other functionality
+        initCategoryItems();
+        initFilterPills();
+        initWishlistButtons();
+        initSmoothScroll();
+        restoreFavouritesState();
+        initFavouritesPage();
+        initProductCardClicks();
+        initProductPage();
+        initBackToTop();
+        initMostraTuttoButtons();
+        applyUrlFilter();
+    } catch (error) {
+        console.error('Error loading products:', error);
+    }
+}
+
+/**
+ * Render products on the page
+ */
+function renderProducts() {
+    const productsContainer = document.getElementById('productsContainer');
+    const featuredContainer = document.querySelector('.featured-scroll');
+    const shopProductsGrid = document.querySelector('.products-grid');
+
+    // Render regular products (index.html)
+    if (productsContainer) {
+        productsContainer.innerHTML = '';
+        allProducts.filter(p => !p.featured).forEach(product => {
+            productsContainer.appendChild(createProductCard(product, 'scroll-card'));
+        });
+    }
+
+    // Render featured products (index.html)
+    if (featuredContainer) {
+        featuredContainer.innerHTML = '';
+        allProducts.filter(p => p.featured).forEach(product => {
+            featuredContainer.appendChild(createProductCard(product, 'featured-card', true));
+        });
+    }
+
+    // Render all products on shop page
+    if (shopProductsGrid) {
+        shopProductsGrid.innerHTML = '';
+        allProducts.forEach(product => {
+            shopProductsGrid.appendChild(createProductCard(product, ''));
+        });
+    }
+}
+
+/**
+ * Create a product card element
+ */
+function createProductCard(product, extraClass = '', isFeatured = false) {
+    const card = document.createElement('div');
+    card.className = `product-card ${extraClass}`;
+    card.dataset.category = product.categories.join(' ');
+    card.dataset.productId = product.id;
+    card.dataset.productName = product.name;
+    card.dataset.productPrice = product.price;
+    card.dataset.productImage = product.image;
+
+    const badgeHTML = isFeatured ? '<span class="badge-bestseller">Bestseller</span>' : '';
+
+    card.innerHTML = `
+        <div class="product-img-wrapper">
+            <img src="${product.image}" alt="${product.name}">
+            ${badgeHTML}
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">${product.name}</h3>
+            <p class="product-price">&euro; ${product.price}</p>
+        </div>
+    `;
+
+    return card;
+}
 
 /**
  * Category Items Functionality
