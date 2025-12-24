@@ -284,12 +284,8 @@
       "name": "Sacca Sara",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/saccaSara.png",
+       "img/saccaDietro.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -305,12 +301,8 @@
       "name": "Sacca Marco",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/saccoMarco.png",
+       "img/saccaDietro.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -326,12 +318,8 @@
       "name": "Sacca Matilde",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/saccaMatilde.png",
+       "img/saccaDietro.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -347,12 +335,7 @@
       "name": "Zaino Sara",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/zainoSara.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -368,12 +351,7 @@
       "name": "Zaino Marco",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/zainoMarco.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -389,12 +367,7 @@
       "name": "Zaino Matilde",
       "price": "110.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/zainoMatilde.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -409,12 +382,7 @@
       "name": "Sebastian",
       "price": "28.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/sebastian.png"
       ],
       "categories": ["regali", "bimbo"],
       "featured": true,
@@ -425,12 +393,7 @@
       "name": "Vladimir",
       "price": "49.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/vladmir.png"
       ],
       "categories": ["regali", "bimbo"],
       "featured": true,
@@ -441,12 +404,7 @@
       "name": "Diego",
       "price": "49.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/diego.png"
       ],
       "categories": ["regali", "bimbo"],
       "featured": true,
@@ -457,12 +415,7 @@
       "name": "Cuoricino Emma",
       "price": "42.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/cuoreEmma.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -473,12 +426,7 @@
       "name": "Susy",
       "price": "25.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/susy.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -489,12 +437,7 @@
       "name": "Versetto",
       "price": "20.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/versetto.png"
       ],
       "categories": ["regali", "cucina"],
       "featured": true,
@@ -505,12 +448,7 @@
       "name": "Salmo 37:5",
       "price": "20.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/375.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -537,12 +475,7 @@
       "name": "Proverbi 3:6",
       "price": "20.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/riconosciuto.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -553,12 +486,7 @@
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/rosa.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -569,12 +497,7 @@
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/verde.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -585,12 +508,7 @@
       "name": "Luna Emma",
       "price": "42.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/lunaEmma.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -601,12 +519,7 @@
       "name": "Nuvoletta Emma",
       "price": "42.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/nuvolettaEmma.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -617,12 +530,7 @@
       "name": "Thea",
       "price": "35.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/thea.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -633,12 +541,7 @@
       "name": "Mario",
       "price": "35.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/mario.png"
       ],
       "categories": ["regali", "bimbo"],
       "featured": true,
@@ -649,12 +552,7 @@
       "name": "Thea",
       "price": "35.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/orsoThea.png"
       ],
       "categories": ["regali", "bimba"],
       "featured": true,
@@ -665,12 +563,7 @@
       "name": "Ghirlanda",
       "price": "35.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/ghirlanda.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -681,12 +574,7 @@
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/stellaEnugola.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -697,12 +585,7 @@
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/stellaenuvolarosa.png"
       ],
       "categories": ["regali"],
       "featured": true,
@@ -713,10 +596,7 @@
       "name": "Felino",
       "price": "33.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/felino.png"
       ],
       "categories": ["borse"],
       "featured": false,
@@ -731,9 +611,7 @@
       "name": "Borsa verde",
       "price": "32.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/borsaverde.png"
       ],
       "categories": ["borse"],
       "featured": false,
@@ -748,11 +626,7 @@
       "name": "Borsa Katrina",
       "price": "32.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/katrina.png"
       ],
       "categories": ["borse"],
       "featured": true,
@@ -767,10 +641,7 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/scozzeseGrigio.png"
       ],
       "categories": ["cucina"],
       "featured": true,
@@ -785,9 +656,7 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/scozzese.png"
       ],
       "categories": ["cucina"],
       "featured": false,
@@ -802,10 +671,7 @@
       "name": "Scozzese",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/scozzesePiatto.png"
       ],
       "categories": ["cucina"],
       "featured": true,
@@ -820,13 +686,11 @@
       "name": "Quadrettata",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/quadrettata.png"
       ],
       "categories": ["cucina"],
       "featured": false,
-      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucna e portino calore in questo periodo festivo!",
+      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
       "specs": {
         "altezza": "60cm",
         "larghezza": "40cm"
@@ -837,10 +701,7 @@
       "name": "Farfalle",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/farfalle.png"
       ],
       "categories": ["cucina"],
       "featured": true,
@@ -855,9 +716,7 @@
       "name": "Romantica",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/romantica.png"
       ],
       "categories": ["cucina"],
       "featured": false,
@@ -890,9 +749,7 @@
       "name": "Set Susy",
       "price": "33.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/setSusy.png"
       ],
       "categories": ["cucina", "bimba"],
       "featured": false,
@@ -907,10 +764,7 @@
       "name": "Grembiule",
       "price": "28.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/grembiule.png"
       ],
       "categories": ["cucina"],
       "featured": true,
@@ -925,9 +779,7 @@
       "name": "Grembiule Irina",
       "price": "28.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/irina.png"
       ],
       "categories": ["cucina"],
       "featured": false,
@@ -942,11 +794,7 @@
       "name": "Grembiule Barbara",
       "price": "28.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+       "img/barbara.png"
       ],
       "categories": ["cucina"],
       "featured": true,
