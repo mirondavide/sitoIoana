@@ -128,10 +128,11 @@
       "name": "Set Matei",
       "price": "25.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/primoMatei.png",
+        "img/secondoMatei.png",
+        "img/terzoMatei.png",
+        "img/quartoMatei.png",
+        "img/quintoMatei.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
