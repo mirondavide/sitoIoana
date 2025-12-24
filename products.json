@@ -759,6 +759,60 @@
       "categories": ["regali"],
       "featured": true,
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
+    },
+    {
+      "id": "42",
+      "name": "Felino",
+      "price": "33.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["borse"],
+      "featured": false,
+      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
+      "specs": {
+        "altezza": "30cm",
+        "larghezza": "35cm"
+      }
+    },
+    {
+      "id": "43",
+      "name": "Borsa verde",
+      "price": "32.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["borse"],
+      "featured": false,
+      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
+      "specs": {
+        "altezza": "40cm",
+        "larghezza": "45cm"
+      }
+    },
+    {
+      "id": "44",
+      "name": "Borsa Katrina",
+      "price": "32.00",
+      "images": [
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png",
+        "img/fabian.png"
+      ],
+      "categories": ["borse"],
+      "featured": true,
+      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
+      "specs": {
+        "altezza": "20cm",
+        "larghezza": "25cm"
+      }
     }
   ]
 }
