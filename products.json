@@ -5,11 +5,7 @@
       "name": "Astuccio Ilaria",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/ilaria.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -24,8 +20,7 @@
       "name": "Astuccio Marika",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/marika.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -40,9 +35,7 @@
       "name": "Astuccio Claudia",
       "price": "18.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/claudia.png"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -75,10 +68,7 @@
       "name": "Bavagliolo Matei",
       "price": "55.00",
       "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
+        "img/matei.png"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": false,
