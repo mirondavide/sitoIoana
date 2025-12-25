@@ -637,6 +637,43 @@ function initFavouritesPage() {
         // Initialize order button click handler
         initFavouritesOrderButton();
     }
+
+    // Populate suggestions section with random products
+    populateFavouritesSuggestions();
+}
+
+/**
+ * Populate Suggestions Section on Favourites Page
+ */
+function populateFavouritesSuggestions() {
+    const suggestionsContainer = document.getElementById('suggestionsContainer');
+    if (!suggestionsContainer || !window.location.pathname.includes('favourites')) return;
+
+    // Get IDs of products already in favourites to exclude them
+    const favourites = getFavourites();
+    const favouriteIds = favourites.map(f => f.id);
+
+    // Get random products (excluding favourites)
+    const validProducts = allProducts.filter(p =>
+        !favouriteIds.includes(p.id) && validateProductImages(p)
+    );
+
+    // Shuffle and take 6 products
+    const shuffled = validProducts.sort(() => 0.5 - Math.random());
+    const suggestedProducts = shuffled.slice(0, 6);
+
+    // Clear and populate suggestions
+    suggestionsContainer.innerHTML = '';
+
+    suggestedProducts.forEach(product => {
+        const card = createSuggestionCard(product);
+        suggestionsContainer.appendChild(card);
+    });
+
+    // Re-initialize functionality for new cards
+    initWishlistButtons();
+    restoreFavouritesState();
+    initProductCardClicks();
 }
 
 /**
