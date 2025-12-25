@@ -41,8 +41,15 @@ async function loadProducts() {
             validateProductImages(product);
         });
 
-        // Render products on the page
-        renderProducts();
+        // Check for category filter in URL before rendering (shop page)
+        let initialCategory = null;
+        if (window.location.pathname.includes('shop.html')) {
+            const urlParams = new URLSearchParams(window.location.search);
+            initialCategory = urlParams.get('category');
+        }
+
+        // Render products on the page (filtered if category specified)
+        renderProducts(initialCategory);
 
         // Initialize all other functionality
         initCategoryItems();
@@ -63,8 +70,9 @@ async function loadProducts() {
 
 /**
  * Render products on the page
+ * @param {string|null} categoryFilter - Optional category to filter products (for shop page)
  */
-function renderProducts() {
+function renderProducts(categoryFilter = null) {
     const productsContainer = document.getElementById('productsContainer');
     const featuredContainer = document.querySelector('.featured-scroll');
     const shopProductsGrid = document.querySelector('.products-grid');
@@ -85,10 +93,20 @@ function renderProducts() {
         });
     }
 
-    // Render all products on shop page
+    // Render products on shop page (filtered if category specified)
     if (shopProductsGrid) {
         shopProductsGrid.innerHTML = '';
-        allProducts.forEach(product => {
+        let productsToRender = allProducts;
+
+        // Filter by category if specified
+        if (categoryFilter) {
+            productsToRender = allProducts.filter(product => {
+                const categories = product.categories || [];
+                return categories.includes(categoryFilter);
+            });
+        }
+
+        productsToRender.forEach(product => {
             shopProductsGrid.appendChild(createProductCard(product, ''));
         });
     }
@@ -128,45 +146,21 @@ function createProductCard(product, extraClass = '', isFeatured = false) {
  */
 function initCategoryItems() {
     const categoryItems = document.querySelectorAll('.category-item[data-category]');
-    const productCards = document.querySelectorAll('.product-card[data-category]');
-    const sectionTitle = document.getElementById('productsSectionTitle');
 
     categoryItems.forEach(item => {
         item.style.cursor = 'pointer';
 
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
             const category = this.dataset.category;
-            const categoryName = this.querySelector('.category-name').textContent;
-
-            // Remove active state from all categories
-            categoryItems.forEach(cat => cat.classList.remove('active'));
-
-            // Add active state to clicked category
-            this.classList.add('active');
-
-            // Update section title
-            if (sectionTitle) {
-                sectionTitle.textContent = categoryName;
-            }
-
-            // Filter products with animation
-            let visibleCount = 0;
-            productCards.forEach((card) => {
-                const categories = card.dataset.category || '';
-
-                if (categories.includes(category)) {
-                    card.style.display = '';
-                    card.style.animation = `fadeIn 0.3s ease ${visibleCount * 0.05}s forwards`;
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
 
             // Haptic feedback on mobile
             if (navigator.vibrate) {
                 navigator.vibrate(30);
             }
+
+            // Navigate to shop page with category filter
+            window.location.href = `shop.html?category=${category}`;
         });
     });
 }
@@ -250,8 +244,75 @@ function initMostraTuttoButtons() {
 }
 
 /**
+ * Category-specific filter configuration
+ */
+const categoryFilters = {
+    'cucina': [
+        { filter: 'tutti', label: 'Tutti' },
+        { filter: 'tovagliette', label: 'Tovagliette' },
+        { filter: 'grembiuli', label: 'Grembiuli' }
+    ],
+    'asilo': [
+        { filter: 'tutti', label: 'Tutti' },
+        { filter: 'bimbo', label: 'Bimbo' },
+        { filter: 'bimba', label: 'Bimba' }
+    ],
+    'borse': [
+        { filter: 'tutti', label: 'Tutti' }
+    ],
+    'decorazioni': [
+        { filter: 'tutti', label: 'Tutti' },
+        { filter: 'bimbo', label: 'Bimbo' },
+        { filter: 'bimba', label: 'Bimba' }
+    ],
+    'regali': [
+        { filter: 'tutti', label: 'Tutti' }
+    ]
+};
+
+/**
+ * Update filter pills based on category
+ */
+function updateFilterPills(category) {
+    const filtersScroll = document.querySelector('.filters-scroll');
+    if (!filtersScroll) return;
+
+    // Get filters for this category, or use default
+    const filters = categoryFilters[category] || [
+        { filter: 'tutti', label: 'Tutti' },
+        { filter: 'asilo', label: 'Asilo' },
+        { filter: 'bimbo', label: 'Bimbo' },
+        { filter: 'bimba', label: 'Bimba' },
+        { filter: 'regalo', label: 'Regalo' },
+        { filter: 'cucina', label: 'Cucina' }
+    ];
+
+    // Clear existing pills
+    filtersScroll.innerHTML = '';
+
+    // Create new pills
+    filters.forEach((filterConfig, index) => {
+        const pill = document.createElement('button');
+        pill.className = 'filter-pill';
+        pill.dataset.filter = filterConfig.filter;
+        pill.textContent = filterConfig.label;
+
+        // Make first pill active by default
+        if (index === 0) {
+            pill.classList.add('active');
+        }
+
+        filtersScroll.appendChild(pill);
+    });
+
+    // Re-initialize filter pills functionality
+    initFilterPills();
+}
+
+/**
  * Apply URL Filter on Shop Page
- * Reads the category parameter from URL and applies the corresponding filter
+ * Reads the category parameter from URL and updates title/filter pills
+ * Note: Products are already filtered during renderProducts() to avoid image flickering
  */
 function applyUrlFilter() {
     // Only run on shop page
@@ -264,36 +325,24 @@ function applyUrlFilter() {
     const category = urlParams.get('category');
 
     if (category) {
-        // Find and click the corresponding filter pill
-        const filterPills = document.querySelectorAll('.filter-pill');
-        const productCards = document.querySelectorAll('.product-card[data-category]');
+        // Update filter pills for this category
+        updateFilterPills(category);
+
+        // Update the category title
         const categoryTitle = document.getElementById('categoryTitle');
+        if (categoryTitle) {
+            const categoryNames = {
+                'cucina': 'Cucina',
+                'asilo': 'Asilo',
+                'borse': 'Borse',
+                'decorazioni': 'Decorazioni',
+                'regali': 'Regali'
+            };
+            categoryTitle.textContent = categoryNames[category] || category.charAt(0).toUpperCase() + category.slice(1);
+        }
 
-        filterPills.forEach(pill => {
-            if (pill.dataset.filter === category) {
-                // Remove active class from all pills
-                filterPills.forEach(p => p.classList.remove('active'));
-                // Add active class to the matching pill
-                pill.classList.add('active');
-
-                // Update the category title
-                if (categoryTitle) {
-                    categoryTitle.textContent = pill.textContent;
-                }
-
-                // Filter the products
-                productCards.forEach((card, index) => {
-                    const categories = card.dataset.category || '';
-
-                    if (category === 'tutti' || categories.includes(category)) {
-                        card.style.display = '';
-                        card.style.animation = `fadeIn 0.3s ease ${index * 0.05}s forwards`;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
-        });
+        // Products are already filtered during renderProducts() - no need to re-filter here
+        // This prevents the image flickering issue caused by applying animations after images loaded
     }
 }
 
@@ -749,7 +798,85 @@ function initProductPage() {
 
         // Update page title
         document.title = product.name + ' - Fabian';
+
+        // Populate related products section
+        populateRelatedProducts(product);
     }
+}
+
+/**
+ * Populate Related Products Section
+ */
+function populateRelatedProducts(currentProduct) {
+    const suggestionsScroll = document.querySelector('.suggestions-scroll');
+    if (!suggestionsScroll) return;
+
+    // Get the full product from allProducts to check for relatedProducts field
+    const fullProduct = allProducts.find(p => p.id === currentProduct.id);
+    let relatedProducts = [];
+
+    if (fullProduct && fullProduct.relatedProducts && fullProduct.relatedProducts.length > 0) {
+        // Use the specified related products
+        relatedProducts = fullProduct.relatedProducts
+            .map(id => allProducts.find(p => p.id === id))
+            .filter(p => p && validateProductImages(p)); // Only include products with valid images
+    } else {
+        // Get random products (excluding current product)
+        relatedProducts = getRandomProducts(currentProduct.id, 6);
+    }
+
+    // Clear existing suggestions
+    suggestionsScroll.innerHTML = '';
+
+    // Create and append suggestion cards
+    relatedProducts.forEach(product => {
+        const card = createSuggestionCard(product);
+        suggestionsScroll.appendChild(card);
+    });
+
+    // Re-initialize wishlist buttons for the new cards
+    initWishlistButtons();
+    restoreFavouritesState();
+    initProductCardClicks();
+}
+
+/**
+ * Get Random Products
+ */
+function getRandomProducts(excludeId, count = 6) {
+    const validProducts = allProducts.filter(p =>
+        p.id !== excludeId && validateProductImages(p)
+    );
+
+    // Shuffle array and take first 'count' items
+    const shuffled = validProducts.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+/**
+ * Create Suggestion Card
+ */
+function createSuggestionCard(product) {
+    const card = document.createElement('div');
+    card.className = 'product-card suggestion-card';
+    card.dataset.productId = product.id;
+    card.dataset.productName = product.name;
+    card.dataset.productPrice = product.price;
+    card.dataset.productImage = product.images?.[0] || 'img/fabian.png';
+    card.dataset.category = product.categories?.join(' ') || '';
+
+    card.innerHTML = `
+        <div class="product-img-wrapper">
+            <img src="${product.images?.[0] || 'img/fabian.png'}" alt="${product.name}">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+        </div>
+        <div class="product-info">
+            <h3 class="product-name">${product.name}</h3>
+            <p class="product-price">&euro; ${product.price}</p>
+        </div>
+    `;
+
+    return card;
 }
 
 /**

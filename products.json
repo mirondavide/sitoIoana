@@ -404,7 +404,7 @@
       "images": [
         "img/versetto.png"
       ],
-      "categories": ["decorazioni", "cucina"],
+      "categories": ["decorazioni"],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -582,7 +582,7 @@
       "images": [
        "img/scozzeseGrigio.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
       "specs": {
@@ -597,7 +597,7 @@
       "images": [
        "img/scozzese.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
       "specs": {
@@ -612,7 +612,7 @@
       "images": [
         "img/scozzesePiatto.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
       "specs": {
@@ -627,7 +627,7 @@
       "images": [
         "img/quadrettata.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
       "specs": {
@@ -642,7 +642,7 @@
       "images": [
         "img/farfalle.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!",
       "specs": {
@@ -657,7 +657,7 @@
       "images": [
         "img/romantica.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "tovagliette"],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!",
       "specs": {
@@ -672,7 +672,7 @@
       "images": [
         "img/setSusy.png"
       ],
-      "categories": ["cucina", "bimba"],
+      "categories": ["cucina", "bimba", "grembiuli"],
       "featured": false,
       "description": "Quali sono i ricordi d'infanzia più teneri di tutti noi? Certamente, tra i migliori ci sono quei giorni in cui mamma o nonna ci mettevano il grembiulino insegnandoci come pasticciare con pane e biscotti. \nCon questo fantastico grembiule da bambino/a personalizzato siete pronte per appassionare i vostri figli alla cucina! Allacciate i grembiuli vedrete che risultati!",
       "specs": {
@@ -687,7 +687,7 @@
       "images": [
         "img/grembiule.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "grembiuli"],
       "featured": true,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
       "specs": {
@@ -702,7 +702,7 @@
       "images": [
        "img/irina.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "grembiuli"],
       "featured": false,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
       "specs": {
@@ -717,7 +717,7 @@
       "images": [
        "img/barbara.png"
       ],
-      "categories": ["cucina"],
+      "categories": ["cucina", "grembiuli"],
       "featured": true,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
       "specs": {
