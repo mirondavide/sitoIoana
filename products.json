@@ -48,7 +48,7 @@
     {
       "id": "4",
       "name": "Bavagliolo Matei",
-      "price": "55.00",
+      "price": "12.00",
       "images": [
         "img/matei.png"
       ],
@@ -63,7 +63,7 @@
     {
       "id": "5",
       "name": "Sacca Matei",
-      "price": "120.00",
+      "price": "25.00",
       "images": [
         "img/saccaMatei.png"
       ],
@@ -93,7 +93,7 @@
     {
       "id": "7",
       "name": "Zaino Matei",
-      "price": "110.00",
+      "price": "45.00",
       "images": [
         "img/zainoMatei.png"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "8",
       "name": "Set Matei",
-      "price": "25.00",
+      "price": "94.00",
       "images": [
         "img/primoMatei.png",
         "img/secondoMatei.png",
@@ -127,7 +127,7 @@
     {
       "id": "9",
       "name": "Set Matilde",
-      "price": "110.00",
+      "price": "94.00",
       "images": [
         "img/primoMatilde.png",
         "img/secondoMatilde.png",
@@ -147,7 +147,7 @@
     {
       "id": "10",
       "name": "Set Marco",
-      "price": "110.00",
+      "price": "94.00",
       "images": [
         "img/primoMarco.png",
         "img/secondoMarco.png",
@@ -167,7 +167,7 @@
     {
       "id": "11",
       "name": "Asciugamano Sara",
-      "price": "110.00",
+      "price": "12.00",
       "images": [
         "img/asciugamoSara.png"
       ],
@@ -183,7 +183,7 @@
     {
       "id": "12",
       "name": "Asciugamano  Marco",
-      "price": "110.00",
+      "price": "12.00",
       "images": [
         "img/asciugamanoMarco.png"
       ],
@@ -199,7 +199,7 @@
     {
       "id": "13",
       "name": "Asciugamano Matilde",
-      "price": "110.00",
+      "price": "12.00",
       "images": [
         "img/asciugamanoMatilde.png"
       ],
@@ -214,24 +214,8 @@
     ,
     {
       "id": "14",
-      "name": "Bavaglino Sara",
-      "price": "110.00",
-      "images": [
-        "img/bavaglinoSara.png"
-      ],
-      "categories": ["asilo", "bimba"],
-      "featured": true,
-      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
-      "specs": {
-        "altezza": "27cm",
-        "larghezza": "24cm"
-      }
-    }
-    ,
-    {
-      "id": "15",
       "name": "Bavaglino Marco",
-      "price": "110.00",
+      "price": "12.00",
       "images": [
         "img/bavaglinoMarco.png"
       ],
@@ -245,9 +229,9 @@
     }
     ,
     {
-      "id": "16",
+      "id": "15",
       "name": "Bavaglino Matilde",
-      "price": "110.00",
+      "price": "12.00",
       "images": [
         "img/bavaglinoMatilde.png"
       ],
@@ -261,9 +245,9 @@
     }
     ,
     {
-      "id": "17",
+      "id": "16",
       "name": "Sacca Sara",
-      "price": "110.00",
+      "price": "25.00",
       "images": [
        "img/saccaSara.png",
        "img/saccaDietro.png"
@@ -278,9 +262,9 @@
     }
     ,
     {
-      "id": "18",
+      "id": "17",
       "name": "Sacca Marco",
-      "price": "110.00",
+      "price": "25.00",
       "images": [
         "img/saccoMarco.png",
        "img/saccaDietro.png"
@@ -295,9 +279,9 @@
     }
     ,
     {
-      "id": "19",
+      "id": "18",
       "name": "Sacca Matilde",
-      "price": "110.00",
+      "price": "25.00",
       "images": [
         "img/saccaMatilde.png",
        "img/saccaDietro.png"
@@ -312,9 +296,9 @@
     }
     ,
     {
-      "id": "20",
+      "id": "19",
       "name": "Zaino Sara",
-      "price": "110.00",
+      "price": "45.00",
       "images": [
         "img/zainoSara.png"
       ],
@@ -328,9 +312,9 @@
     }
     ,
     {
-      "id": "21",
+      "id": "20",
       "name": "Zaino Marco",
-      "price": "110.00",
+      "price": "45.00",
       "images": [
         "img/zainoMarco.png"
       ],
@@ -344,9 +328,9 @@
     }
     ,
     {
-      "id": "22",
+      "id": "21",
       "name": "Zaino Matilde",
-      "price": "110.00",
+      "price": "45.00",
       "images": [
         "img/zainoMatilde.png"
       ],
@@ -359,62 +343,62 @@
       }
     },
     {
-      "id": "23",
+      "id": "22",
       "name": "Sebastian",
       "price": "28.00",
       "images": [
         "img/sebastian.png"
       ],
-      "categories": ["decorazioni", "bimbo"],
+      "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
       "description": "Il nostro cavallino dondolante personalizzabile è un giocattolo irresistibile per i piccoli amanti dei cavalli. Scegli il colore che preferisci e aggiungi un nome sul collare per un tocco speciale. Questo giocattolo è perfetto per stimolare l'immaginazione dei bambini e garantire ore di divertimento sicuro."
     },
     {
-      "id": "24",
+      "id": "23",
       "name": "Vladimir",
       "price": "49.00",
       "images": [
         "img/vladmir.png"
       ],
-      "categories": ["decorazioni", "bimbo"],
+      "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
       "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
     },
     {
-      "id": "25",
+      "id": "24",
       "name": "Diego",
       "price": "49.00",
       "images": [
         "img/diego.png"
       ],
-      "categories": ["decorazioni", "bimbo"],
+      "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
       "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
     },
     {
-      "id": "26",
+      "id": "25",
       "name": "Cuoricino Emma",
       "price": "42.00",
       "images": [
         "img/cuoreEmma.png"
       ],
-      "categories": ["decorazioni", "bimba"],
+      "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
       "description": "Questo prezioso regalo di nascita, impreziosito dal nome del neonato finemente ricamato, è anche completamente personalizzabile, aggiungendo un tocco unico e speciale. Avvolto in cotone soffice, questo morbido dono non solo offre calore e comfort, ma rappresenta anche un ricordo indimenticabile della gioiosa occasione. Un gesto affettuoso e pensato con cura, pronto a creare momenti di dolcezza e tenerezza per tutta la vita."
     },
     {
-      "id": "27",
+      "id": "26",
       "name": "Susy",
       "price": "25.00",
       "images": [
         "img/susy.png"
       ],
-      "categories": ["decorazioni", "bimba"],
+      "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "28",
+      "id": "27",
       "name": "Versetto",
       "price": "20.00",
       "images": [
@@ -425,7 +409,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "29",
+      "id": "28",
       "name": "Salmo 37:5",
       "price": "20.00",
       "images": [
@@ -436,7 +420,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "30",
+      "id": "29",
       "name": "Benedizione",
       "price": "20.00",
       "images": [
@@ -452,7 +436,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "31",
+      "id": "30",
       "name": "Proverbi 3:6",
       "price": "20.00",
       "images": [
@@ -463,7 +447,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "32",
+      "id": "31",
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
@@ -474,7 +458,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "33",
+      "id": "32",
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
@@ -485,7 +469,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "34",
+      "id": "33",
       "name": "Luna Emma",
       "price": "42.00",
       "images": [
@@ -496,7 +480,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "35",
+      "id": "34",
       "name": "Nuvoletta Emma",
       "price": "42.00",
       "images": [
@@ -507,40 +491,40 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "36",
+      "id": "35",
       "name": "Thea",
       "price": "35.00",
       "images": [
         "img/thea.png"
       ],
-      "categories": ["decorazioni", "bimba"],
+      "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
     {
-      "id": "37",
+      "id": "36",
       "name": "Mario",
       "price": "35.00",
       "images": [
         "img/mario.png"
       ],
-      "categories": ["decorazioni", "bimbo"],
+      "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
     {
-      "id": "38",
+      "id": "37",
       "name": "Thea",
       "price": "35.00",
       "images": [
         "img/orsoThea.png"
       ],
-      "categories": ["decorazioni", "bimba"],
+      "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
       "description": "Peluche tenerissimo, accompagnato da  vivaci palloncini. Potrai personalizzare i palloncini con le lettere del tuo nome per renderlo unico. Con un'espressione tenera e dettagli curati, questo pupazzo è pronto a portare allegria e dolcezza nella tua vita. Un compagno perfetto per chi ama la magia dei palloncini e l'abbraccio caldo di un orsetto di peluche."
     },
     {
-      "id": "39",
+      "id": "38",
       "name": "Ghirlanda",
       "price": "35.00",
       "images": [
@@ -551,50 +535,51 @@
       "description": "Una ghirlanda personalizzabile che ti permette di esprimere la tua creatività! Con colori, materiali e decorazioni a tua scelta, questa ghirlanda diventa un'opera d'arte unica. Perfetta per decorare la porta d'ingresso, la casa o qualsiasi spazio speciale. Un regalo originale e personalizzato per te o per qualcun altro!"
     },
     {
-      "id": "40",
+      "id": "39",
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
         "img/stellaEnugola.png"
       ],
-      "categories": ["decorazioni"],
+      "categories": ["decorazioni", "regalo"],
       "featured": false,
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
     {
-      "id": "41",
+      "id": "40",
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
         "img/stellaenuvolarosa.png"
       ],
-      "categories": ["decorazioni"],
+      "categories": ["decorazioni", "regalo"],
       "featured": false,
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
     {
-      "id": "42",
+      "id": "41",
       "name": "Felino",
       "price": "33.00",
       "images": [
         "img/felino.png"
       ],
-      "categories": ["borse"],
+      "categories": ["regalo"],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
       "specs": {
         "altezza": "30cm",
         "larghezza": "35cm"
-      }
+      },
+      "relatedProducts": ["23", "24", "39", "40", "22", "35", "36", "37", "25", "26", "41", "42", "43"]
     },
     {
-      "id": "43",
+      "id": "42",
       "name": "Borsa verde",
       "price": "32.00",
       "images": [
         "img/borsaverde.png"
       ],
-      "categories": ["borse"],
+      "categories": ["borse", "regalo"],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
       "specs": {
@@ -603,13 +588,13 @@
       }
     },
     {
-      "id": "44",
+      "id": "43",
       "name": "Borsa Katrina",
       "price": "32.00",
       "images": [
        "img/katrina.png"
       ],
-      "categories": ["borse"],
+      "categories": ["borse", "regalo"],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
       "specs": {
@@ -618,7 +603,7 @@
       }
     },
     {
-      "id": "45",
+      "id": "44",
       "name": "Scozzese",
       "price": "12.00",
       "images": [
@@ -633,7 +618,7 @@
       }
     },
     {
-      "id": "46",
+      "id": "45",
       "name": "Scozzese",
       "price": "12.00",
       "images": [
@@ -648,7 +633,7 @@
       }
     },
     {
-      "id": "47",
+      "id": "46",
       "name": "Scozzese",
       "price": "18.00",
       "images": [
@@ -663,7 +648,7 @@
       }
     },
     {
-      "id": "48",
+      "id": "47",
       "name": "Quadrettata",
       "price": "18.00",
       "images": [
@@ -678,7 +663,7 @@
       }
     },
     {
-      "id": "49",
+      "id": "48",
       "name": "Farfalle",
       "price": "18.00",
       "images": [
@@ -693,7 +678,7 @@
       }
     },
     {
-      "id": "50",
+      "id": "49",
       "name": "Romantica",
       "price": "18.00",
       "images": [
@@ -708,9 +693,9 @@
       }
     },
     {
-      "id": "51",
+      "id": "50",
       "name": "Set Megan",
-      "price": "33.00",
+      "price": "94.00",
       "images": [
         "img/fabian.png",
         "img/fabian.png",
@@ -726,9 +711,9 @@
       }
     },
     {
-      "id": "52",
+      "id": "51",
       "name": "Set Susy",
-      "price": "33.00",
+      "price": "94.00",
       "images": [
         "img/setSusy.png"
       ],
@@ -741,7 +726,7 @@
       }
     },
     {
-      "id": "53",
+      "id": "52",
       "name": "Grembiule",
       "price": "28.00",
       "images": [
@@ -756,7 +741,7 @@
       }
     },
     {
-      "id": "54",
+      "id": "53",
       "name": "Grembiule Irina",
       "price": "28.00",
       "images": [
@@ -771,7 +756,7 @@
       }
     },
     {
-      "id": "55",
+      "id": "54",
       "name": "Grembiule Barbara",
       "price": "28.00",
       "images": [
