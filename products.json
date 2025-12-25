@@ -421,22 +421,6 @@
     },
     {
       "id": "29",
-      "name": "Benedizione",
-      "price": "20.00",
-      "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
-      ],
-      "categories": ["decorazioni"],
-      "featured": false,
-      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
-    },
-    {
-      "id": "30",
       "name": "Proverbi 3:6",
       "price": "20.00",
       "images": [
@@ -447,7 +431,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "31",
+      "id": "30",
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
@@ -458,7 +442,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "32",
+      "id": "31",
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
@@ -469,7 +453,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "33",
+      "id": "32",
       "name": "Luna Emma",
       "price": "42.00",
       "images": [
@@ -480,18 +464,7 @@
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
     {
-      "id": "34",
-      "name": "Nuvoletta Emma",
-      "price": "42.00",
-      "images": [
-        "img/nuvolettaEmma.png"
-      ],
-      "categories": ["decorazioni", "bimba"],
-      "featured": false,
-      "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
-    },
-    {
-      "id": "35",
+      "id": "33",
       "name": "Thea",
       "price": "35.00",
       "images": [
@@ -502,7 +475,7 @@
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
     {
-      "id": "36",
+      "id": "34",
       "name": "Mario",
       "price": "35.00",
       "images": [
@@ -513,7 +486,7 @@
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
     {
-      "id": "37",
+      "id": "35",
       "name": "Thea",
       "price": "35.00",
       "images": [
@@ -524,7 +497,7 @@
       "description": "Peluche tenerissimo, accompagnato da  vivaci palloncini. Potrai personalizzare i palloncini con le lettere del tuo nome per renderlo unico. Con un'espressione tenera e dettagli curati, questo pupazzo è pronto a portare allegria e dolcezza nella tua vita. Un compagno perfetto per chi ama la magia dei palloncini e l'abbraccio caldo di un orsetto di peluche."
     },
     {
-      "id": "38",
+      "id": "36",
       "name": "Ghirlanda",
       "price": "35.00",
       "images": [
@@ -535,7 +508,7 @@
       "description": "Una ghirlanda personalizzabile che ti permette di esprimere la tua creatività! Con colori, materiali e decorazioni a tua scelta, questa ghirlanda diventa un'opera d'arte unica. Perfetta per decorare la porta d'ingresso, la casa o qualsiasi spazio speciale. Un regalo originale e personalizzato per te o per qualcun altro!"
     },
     {
-      "id": "39",
+      "id": "37",
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
@@ -546,7 +519,7 @@
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
     {
-      "id": "40",
+      "id": "38",
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
@@ -557,7 +530,7 @@
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
     {
-      "id": "41",
+      "id": "39",
       "name": "Felino",
       "price": "33.00",
       "images": [
@@ -570,10 +543,10 @@
         "altezza": "30cm",
         "larghezza": "35cm"
       },
-      "relatedProducts": ["23", "24", "39", "40", "22", "35", "36", "37", "25", "26", "41", "42", "43"]
+      "relatedProducts": ["23", "24", "37", "38", "22", "33", "34", "35", "25", "26", "39", "40", "41"]
     },
     {
-      "id": "42",
+      "id": "40",
       "name": "Borsa verde",
       "price": "32.00",
       "images": [
@@ -588,7 +561,7 @@
       }
     },
     {
-      "id": "43",
+      "id": "41",
       "name": "Borsa Katrina",
       "price": "32.00",
       "images": [
@@ -603,7 +576,7 @@
       }
     },
     {
-      "id": "44",
+      "id": "42",
       "name": "Scozzese",
       "price": "12.00",
       "images": [
@@ -618,7 +591,7 @@
       }
     },
     {
-      "id": "45",
+      "id": "43",
       "name": "Scozzese",
       "price": "12.00",
       "images": [
@@ -633,7 +606,7 @@
       }
     },
     {
-      "id": "46",
+      "id": "44",
       "name": "Scozzese",
       "price": "18.00",
       "images": [
@@ -648,7 +621,7 @@
       }
     },
     {
-      "id": "47",
+      "id": "45",
       "name": "Quadrettata",
       "price": "18.00",
       "images": [
@@ -663,7 +636,7 @@
       }
     },
     {
-      "id": "48",
+      "id": "46",
       "name": "Farfalle",
       "price": "18.00",
       "images": [
@@ -678,7 +651,7 @@
       }
     },
     {
-      "id": "49",
+      "id": "47",
       "name": "Romantica",
       "price": "18.00",
       "images": [
@@ -693,25 +666,7 @@
       }
     },
     {
-      "id": "50",
-      "name": "Set Megan",
-      "price": "94.00",
-      "images": [
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png",
-        "img/fabian.png"
-      ],
-      "categories": ["cucina", "bimba"],
-      "featured": true,
-      "description": "Quali sono i ricordi d'infanzia più teneri di tutti noi? Certamente, tra i migliori ci sono quei giorni in cui mamma o nonna ci mettevano il grembiulino insegnandoci come pasticciare con pane e biscotti. \nCon questo fantastico grembiule da bambino/a personalizzato siete pronte per appassionare i vostri figli alla cucina! Allacciate i grembiuli vedrete che risultati!",
-      "specs": {
-        "altezza": "40cm",
-        "larghezza": "30cm"
-      }
-    },
-    {
-      "id": "51",
+      "id": "48",
       "name": "Set Susy",
       "price": "94.00",
       "images": [
@@ -726,7 +681,7 @@
       }
     },
     {
-      "id": "52",
+      "id": "49",
       "name": "Grembiule",
       "price": "28.00",
       "images": [
@@ -741,7 +696,7 @@
       }
     },
     {
-      "id": "53",
+      "id": "50",
       "name": "Grembiule Irina",
       "price": "28.00",
       "images": [
@@ -756,7 +711,7 @@
       }
     },
     {
-      "id": "54",
+      "id": "51",
       "name": "Grembiule Barbara",
       "price": "28.00",
       "images": [
