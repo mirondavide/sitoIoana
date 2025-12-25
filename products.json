@@ -54,11 +54,7 @@
       ],
       "categories": ["asilo", "bimbo"],
       "featured": false,
-      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
-      "specs": {
-        "altezza": "20cm",
-        "larghezza": "18cm"
-      }
+      "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui."
     },
     {
       "id": "5",
@@ -539,10 +535,6 @@
       "categories": ["regalo"],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
-      "specs": {
-        "altezza": "30cm",
-        "larghezza": "35cm"
-      },
       "relatedProducts": ["23", "24", "37", "38", "22", "33", "34", "35", "25", "26", "39", "40", "41"]
     },
     {
@@ -554,11 +546,7 @@
       ],
       "categories": ["borse", "regalo"],
       "featured": false,
-      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
-      "specs": {
-        "altezza": "40cm",
-        "larghezza": "45cm"
-      }
+      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo."
     },
     {
       "id": "41",
@@ -569,11 +557,7 @@
       ],
       "categories": ["borse", "regalo"],
       "featured": false,
-      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
-      "specs": {
-        "altezza": "20cm",
-        "larghezza": "25cm"
-      }
+      "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo."
     },
     {
       "id": "42",
@@ -584,11 +568,7 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
-      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
-      "specs": {
-        "altezza": "85cm",
-        "larghezza": "70cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
     {
       "id": "43",
@@ -599,11 +579,7 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
-      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
-      "specs": {
-        "altezza": "20cm",
-        "larghezza": "20cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
     {
       "id": "44",
@@ -614,11 +590,7 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
-      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
-      "specs": {
-        "altezza": "30cm",
-        "larghezza": "45cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
     {
       "id": "45",
@@ -629,11 +601,7 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
-      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!",
-      "specs": {
-        "altezza": "60cm",
-        "larghezza": "40cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
     {
       "id": "46",
@@ -644,11 +612,7 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
-      "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!",
-      "specs": {
-        "altezza": "18cm",
-        "larghezza": "35cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!"
     },
     {
       "id": "47",
@@ -659,16 +623,12 @@
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
-      "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!",
-      "specs": {
-        "altezza": "35cm",
-        "larghezza": "50cm"
-      }
+      "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!"
     },
     {
       "id": "48",
       "name": "Set Susy",
-      "price": "94.00",
+      "price": "33.00",
       "images": [
         "img/setSusy.webp"
       ],
@@ -676,8 +636,8 @@
       "featured": false,
       "description": "Quali sono i ricordi d'infanzia più teneri di tutti noi? Certamente, tra i migliori ci sono quei giorni in cui mamma o nonna ci mettevano il grembiulino insegnandoci come pasticciare con pane e biscotti. \nCon questo fantastico grembiule da bambino/a personalizzato siete pronte per appassionare i vostri figli alla cucina! Allacciate i grembiuli vedrete che risultati!",
       "specs": {
-        "altezza": "38cm",
-        "larghezza": "25cm"
+        "Cappello bambino": "13.00€",
+        "Grembiule bambino": "20.00€"
       }
     },
     {
@@ -689,11 +649,7 @@
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": true,
-      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
-      "specs": {
-        "altezza": "22cm",
-        "larghezza": "10cm"
-      }
+      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
     },
     {
       "id": "50",
@@ -704,11 +660,7 @@
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": false,
-      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
-      "specs": {
-        "altezza": "15cm",
-        "larghezza": "35cm"
-      }
+      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
     },
     {
       "id": "51",
@@ -719,11 +671,7 @@
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": true,
-      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica....",
-      "specs": {
-        "altezza": "vari",
-        "larghezza": "vari"
-      }
+      "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
     }
   ]
 }

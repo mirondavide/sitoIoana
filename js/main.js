@@ -733,6 +733,7 @@ function initProductCardClicks() {
                 images: fullProduct.images || ['img/fabian.webp'],
                 description: fullProduct.description || '',
                 specs: fullProduct.specs || {},
+                customSpecs: fullProduct.customSpecs || [],
                 category: this.dataset.category || ''
             };
 
@@ -771,7 +772,21 @@ function initProductPage() {
         }
 
         // Populate product specs
-        if (product.specs) {
+        const specsSection = document.querySelector('.product-details-section');
+        const specsList = document.querySelector('.product-specs');
+
+        if (product.customSpecs && product.customSpecs.length > 0) {
+            // Use custom specs
+            if (specsList) {
+                specsList.innerHTML = product.customSpecs.map(spec => `
+                    <li>
+                        <span class="spec-label">${spec.label}</span>
+                        <span class="spec-value">${spec.value}</span>
+                    </li>
+                `).join('');
+            }
+            if (specsSection) specsSection.style.display = '';
+        } else if (product.specs && Object.keys(product.specs).length > 0) {
             const specAltezza = document.querySelector('.spec-altezza');
             const specLarghezza = document.querySelector('.spec-larghezza');
             const specProfondita = document.querySelector('.spec-profondita');
@@ -785,6 +800,9 @@ function initProductPage() {
             if (specProfondita && product.specs.profondita) {
                 specProfondita.textContent = product.specs.profondita;
             }
+            if (specsSection) specsSection.style.display = '';
+        } else {
+            if (specsSection) specsSection.style.display = 'none';
         }
 
         // Dynamically populate carousel with images
