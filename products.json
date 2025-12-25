@@ -5,7 +5,7 @@
       "name": "Astuccio Ilaria",
       "price": "18.00",
       "images": [
-        "img/ilaria.png"
+        "img/ilaria.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -20,7 +20,7 @@
       "name": "Astuccio Marika",
       "price": "18.00",
       "images": [
-        "img/marika.png"
+        "img/marika.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -35,7 +35,7 @@
       "name": "Astuccio Claudia",
       "price": "18.00",
       "images": [
-        "img/claudia.png"
+        "img/claudia.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": false,
@@ -50,7 +50,7 @@
       "name": "Bavagliolo Matei",
       "price": "12.00",
       "images": [
-        "img/matei.png"
+        "img/matei.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": false,
@@ -65,7 +65,7 @@
       "name": "Sacca Matei",
       "price": "25.00",
       "images": [
-        "img/saccaMatei.png"
+        "img/saccaMatei.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": false,
@@ -80,7 +80,7 @@
       "name": "Asciugamano Matei",
       "price": "12.00",
       "images": [
-        "img/mateiAsciugamano.png"
+        "img/mateiAsciugamano.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -95,7 +95,7 @@
       "name": "Zaino Matei",
       "price": "45.00",
       "images": [
-        "img/zainoMatei.png"
+        "img/zainoMatei.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -110,11 +110,11 @@
       "name": "Set Matei",
       "price": "94.00",
       "images": [
-        "img/primoMatei.png",
-        "img/secondoMatei.png",
-        "img/terzoMatei.png",
-        "img/quartoMatei.png",
-        "img/quintoMatei.png"
+        "img/primoMatei.webp",
+        "img/secondoMatei.webp",
+        "img/terzoMatei.webp",
+        "img/quartoMatei.webp",
+        "img/quintoMatei.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -129,11 +129,11 @@
       "name": "Set Matilde",
       "price": "94.00",
       "images": [
-        "img/primoMatilde.png",
-        "img/secondoMatilde.png",
-        "img/quintoMatilde.png",
-        "img/quartoMatilde.png",
-        "img/terzoMatilde.png"
+        "img/primoMatilde.webp",
+        "img/secondoMatilde.webp",
+        "img/quintoMatilde.webp",
+        "img/quartoMatilde.webp",
+        "img/terzoMatilde.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -149,11 +149,11 @@
       "name": "Set Marco",
       "price": "94.00",
       "images": [
-        "img/primoMarco.png",
-        "img/secondoMarco.png",
-        "img/terzaMarco.png",
-        "img/quartaMarco.png",
-        "img/quintaMarco.png"
+        "img/primoMarco.webp",
+        "img/secondoMarco.webp",
+        "img/terzaMarco.webp",
+        "img/quartaMarco.webp",
+        "img/quintaMarco.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -169,7 +169,7 @@
       "name": "Asciugamano Sara",
       "price": "12.00",
       "images": [
-        "img/asciugamoSara.png"
+        "img/asciugamoSara.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -185,7 +185,7 @@
       "name": "Asciugamano  Marco",
       "price": "12.00",
       "images": [
-        "img/asciugamanoMarco.png"
+        "img/asciugamanoMarco.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -201,7 +201,7 @@
       "name": "Asciugamano Matilde",
       "price": "12.00",
       "images": [
-        "img/asciugamanoMatilde.png"
+        "img/asciugamanoMatilde.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -217,7 +217,7 @@
       "name": "Bavaglino Marco",
       "price": "12.00",
       "images": [
-        "img/bavaglinoMarco.png"
+        "img/bavaglinoMarco.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -233,7 +233,7 @@
       "name": "Bavaglino Matilde",
       "price": "12.00",
       "images": [
-        "img/bavaglinoMatilde.png"
+        "img/bavaglinoMatilde.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -249,8 +249,8 @@
       "name": "Sacca Sara",
       "price": "25.00",
       "images": [
-       "img/saccaSara.png",
-       "img/saccaDietro.png"
+       "img/saccaSara.webp",
+       "img/saccaDietro.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -266,8 +266,8 @@
       "name": "Sacca Marco",
       "price": "25.00",
       "images": [
-        "img/saccoMarco.png",
-       "img/saccaDietro.png"
+        "img/saccoMarco.webp",
+       "img/saccaDietro.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -283,8 +283,8 @@
       "name": "Sacca Matilde",
       "price": "25.00",
       "images": [
-        "img/saccaMatilde.png",
-       "img/saccaDietro.png"
+        "img/saccaMatilde.webp",
+       "img/saccaDietro.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -300,7 +300,7 @@
       "name": "Zaino Sara",
       "price": "45.00",
       "images": [
-        "img/zainoSara.png"
+        "img/zainoSara.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -316,7 +316,7 @@
       "name": "Zaino Marco",
       "price": "45.00",
       "images": [
-        "img/zainoMarco.png"
+        "img/zainoMarco.webp"
       ],
       "categories": ["asilo", "bimbo"],
       "featured": true,
@@ -332,7 +332,7 @@
       "name": "Zaino Matilde",
       "price": "45.00",
       "images": [
-        "img/zainoMatilde.png"
+        "img/zainoMatilde.webp"
       ],
       "categories": ["asilo", "bimba"],
       "featured": true,
@@ -347,7 +347,7 @@
       "name": "Sebastian",
       "price": "28.00",
       "images": [
-        "img/sebastian.png"
+        "img/sebastian.webp"
       ],
       "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
@@ -358,7 +358,7 @@
       "name": "Vladimir",
       "price": "49.00",
       "images": [
-        "img/vladmir.png"
+        "img/vladmir.webp"
       ],
       "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
@@ -369,7 +369,7 @@
       "name": "Diego",
       "price": "49.00",
       "images": [
-        "img/diego.png"
+        "img/diego.webp"
       ],
       "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
@@ -380,7 +380,7 @@
       "name": "Cuoricino Emma",
       "price": "42.00",
       "images": [
-        "img/cuoreEmma.png"
+        "img/cuoreEmma.webp"
       ],
       "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
@@ -391,7 +391,7 @@
       "name": "Susy",
       "price": "25.00",
       "images": [
-        "img/susy.png"
+        "img/susy.webp"
       ],
       "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
@@ -402,7 +402,7 @@
       "name": "Versetto",
       "price": "20.00",
       "images": [
-        "img/versetto.png"
+        "img/versetto.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -413,7 +413,7 @@
       "name": "Salmo 37:5",
       "price": "20.00",
       "images": [
-        "img/375.png"
+        "img/375.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -424,7 +424,7 @@
       "name": "Proverbi 3:6",
       "price": "20.00",
       "images": [
-        "img/riconosciuto.png"
+        "img/riconosciuto.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -435,7 +435,7 @@
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
-        "img/rosa.png"
+        "img/rosa.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -446,7 +446,7 @@
       "name": "Giobbe 11:13",
       "price": "20.00",
       "images": [
-        "img/verde.png"
+        "img/verde.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -457,7 +457,7 @@
       "name": "Luna Emma",
       "price": "42.00",
       "images": [
-        "img/lunaEmma.png"
+        "img/lunaEmma.webp"
       ],
       "categories": ["decorazioni", "bimba"],
       "featured": false,
@@ -468,7 +468,7 @@
       "name": "Thea",
       "price": "35.00",
       "images": [
-        "img/thea.png"
+        "img/thea.webp"
       ],
       "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
@@ -479,7 +479,7 @@
       "name": "Mario",
       "price": "35.00",
       "images": [
-        "img/mario.png"
+        "img/mario.webp"
       ],
       "categories": ["decorazioni", "bimbo", "regalo"],
       "featured": false,
@@ -490,7 +490,7 @@
       "name": "Thea",
       "price": "35.00",
       "images": [
-        "img/orsoThea.png"
+        "img/orsoThea.webp"
       ],
       "categories": ["decorazioni", "bimba", "regalo"],
       "featured": false,
@@ -501,7 +501,7 @@
       "name": "Ghirlanda",
       "price": "35.00",
       "images": [
-       "img/ghirlanda.png"
+       "img/ghirlanda.webp"
       ],
       "categories": ["decorazioni"],
       "featured": false,
@@ -512,7 +512,7 @@
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
-        "img/stellaEnugola.png"
+        "img/stellaEnugola.webp"
       ],
       "categories": ["decorazioni", "regalo"],
       "featured": false,
@@ -523,7 +523,7 @@
       "name": "Stella e nuvola",
       "price": "18.00",
       "images": [
-        "img/stellaenuvolarosa.png"
+        "img/stellaenuvolarosa.webp"
       ],
       "categories": ["decorazioni", "regalo"],
       "featured": false,
@@ -534,7 +534,7 @@
       "name": "Felino",
       "price": "33.00",
       "images": [
-        "img/felino.png"
+        "img/felino.webp"
       ],
       "categories": ["regalo"],
       "featured": false,
@@ -550,7 +550,7 @@
       "name": "Borsa verde",
       "price": "32.00",
       "images": [
-        "img/borsaverde.png"
+        "img/borsaverde.webp"
       ],
       "categories": ["borse", "regalo"],
       "featured": false,
@@ -565,7 +565,7 @@
       "name": "Borsa Katrina",
       "price": "32.00",
       "images": [
-       "img/katrina.png"
+       "img/katrina.webp"
       ],
       "categories": ["borse", "regalo"],
       "featured": false,
@@ -580,7 +580,7 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-       "img/scozzeseGrigio.png"
+       "img/scozzeseGrigio.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
@@ -595,7 +595,7 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-       "img/scozzese.png"
+       "img/scozzese.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
@@ -610,7 +610,7 @@
       "name": "Scozzese",
       "price": "18.00",
       "images": [
-        "img/scozzesePiatto.png"
+        "img/scozzesePiatto.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
@@ -625,7 +625,7 @@
       "name": "Quadrettata",
       "price": "18.00",
       "images": [
-        "img/quadrettata.png"
+        "img/quadrettata.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
@@ -640,7 +640,7 @@
       "name": "Farfalle",
       "price": "18.00",
       "images": [
-        "img/farfalle.png"
+        "img/farfalle.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": true,
@@ -655,7 +655,7 @@
       "name": "Romantica",
       "price": "18.00",
       "images": [
-        "img/romantica.png"
+        "img/romantica.webp"
       ],
       "categories": ["cucina", "tovagliette"],
       "featured": false,
@@ -670,7 +670,7 @@
       "name": "Set Susy",
       "price": "94.00",
       "images": [
-        "img/setSusy.png"
+        "img/setSusy.webp"
       ],
       "categories": ["cucina", "bimba", "grembiuli"],
       "featured": false,
@@ -685,7 +685,7 @@
       "name": "Grembiule",
       "price": "28.00",
       "images": [
-        "img/grembiule.png"
+        "img/grembiule.webp"
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": true,
@@ -700,7 +700,7 @@
       "name": "Grembiule Irina",
       "price": "28.00",
       "images": [
-       "img/irina.png"
+       "img/irina.webp"
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": false,
@@ -715,7 +715,7 @@
       "name": "Grembiule Barbara",
       "price": "28.00",
       "images": [
-       "img/barbara.png"
+       "img/barbara.webp"
       ],
       "categories": ["cucina", "grembiuli"],
       "featured": true,

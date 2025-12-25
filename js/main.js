@@ -77,10 +77,13 @@ function renderProducts(categoryFilter = null) {
     const featuredContainer = document.querySelector('.featured-scroll');
     const shopProductsGrid = document.querySelector('.products-grid');
 
-    // Render regular products (index.html)
+    // Render regular products (index.html) - randomized order
     if (productsContainer) {
         productsContainer.innerHTML = '';
-        allProducts.filter(p => !p.featured).forEach(product => {
+        const regularProducts = allProducts.filter(p => !p.featured);
+        // Shuffle the products array for random display order
+        const shuffled = [...regularProducts].sort(() => Math.random() - 0.5);
+        shuffled.forEach(product => {
             productsContainer.appendChild(createProductCard(product, 'scroll-card'));
         });
     }
@@ -98,12 +101,18 @@ function renderProducts(categoryFilter = null) {
         shopProductsGrid.innerHTML = '';
         let productsToRender = allProducts;
 
-        // Filter by category if specified
-        if (categoryFilter) {
+        // Filter by category if specified (skip filtering for "tutti" which means "all")
+        if (categoryFilter && categoryFilter !== 'tutti') {
             productsToRender = allProducts.filter(product => {
                 const categories = product.categories || [];
                 return categories.includes(categoryFilter);
             });
+        }
+
+        // Hide filters section if no products
+        const filtersSection = document.querySelector('.filters-section');
+        if (filtersSection) {
+            filtersSection.style.display = productsToRender.length === 0 ? 'none' : '';
         }
 
         productsToRender.forEach(product => {
@@ -122,13 +131,13 @@ function createProductCard(product, extraClass = '', isFeatured = false) {
     card.dataset.productId = product.id;
     card.dataset.productName = product.name;
     card.dataset.productPrice = product.price;
-    card.dataset.productImage = product.images?.[0] || 'img/fabian.png';
+    card.dataset.productImage = product.images?.[0] || 'img/fabian.webp';
 
     const badgeHTML = isFeatured ? '<span class="badge-bestseller">Bestseller</span>' : '';
 
     card.innerHTML = `
         <div class="product-img-wrapper">
-            <img src="${product.images?.[0] || 'img/fabian.png'}" alt="${product.name}">
+            <img src="${product.images?.[0] || 'img/fabian.webp'}" alt="${product.name}">
             ${badgeHTML}
             <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
         </div>
@@ -275,10 +284,16 @@ const categoryFilters = {
  */
 function updateFilterPills(category) {
     const filtersScroll = document.querySelector('.filters-scroll');
+    const filtersSection = document.querySelector('.filters-section');
     if (!filtersScroll) return;
 
+    // Get products in current category
+    const productsInCategory = category && category !== 'tutti'
+        ? allProducts.filter(p => (p.categories || []).includes(category))
+        : allProducts;
+
     // Get filters for this category, or use default
-    const filters = categoryFilters[category] || [
+    let filters = categoryFilters[category] || [
         { filter: 'tutti', label: 'Tutti' },
         { filter: 'asilo', label: 'Asilo' },
         { filter: 'bimbo', label: 'Bimbo' },
@@ -286,6 +301,22 @@ function updateFilterPills(category) {
         { filter: 'regalo', label: 'Regalo' },
         { filter: 'cucina', label: 'Cucina' }
     ];
+
+    // Filter out pills that have no matching products
+    filters = filters.filter(filterConfig => {
+        if (filterConfig.filter === 'tutti') return true;
+        return productsInCategory.some(p => (p.categories || []).includes(filterConfig.filter));
+    });
+
+    // Hide filters section if only "Tutti" filter remains or no products
+    if (filtersSection) {
+        if (filters.length <= 1 || productsInCategory.length === 0) {
+            filtersSection.style.display = 'none';
+            return;
+        } else {
+            filtersSection.style.display = '';
+        }
+    }
 
     // Clear existing pills
     filtersScroll.innerHTML = '';
@@ -642,7 +673,7 @@ function createFavouriteItem(product) {
 
     item.innerHTML = `
         <div class="favourite-img">
-            <img src="${product.images?.[0] || product.image || 'img/fabian.png'}" alt="${product.name}">
+            <img src="${product.images?.[0] || product.image || 'img/fabian.webp'}" alt="${product.name}">
         </div>
         <div class="favourite-info">
             <h3 class="favourite-name">${product.name}</h3>
@@ -699,7 +730,7 @@ function initProductCardClicks() {
                 id: fullProduct.id,
                 name: fullProduct.name,
                 price: fullProduct.price,
-                images: fullProduct.images || ['img/fabian.png'],
+                images: fullProduct.images || ['img/fabian.webp'],
                 description: fullProduct.description || '',
                 specs: fullProduct.specs || {},
                 category: this.dataset.category || ''
@@ -759,7 +790,7 @@ function initProductPage() {
         // Dynamically populate carousel with images
         const carouselInner = document.querySelector('#productCarousel .carousel-inner');
         const carouselIndicators = document.querySelector('#productCarousel .carousel-indicators');
-        const images = product.images || ['img/fabian.png'];
+        const images = product.images || ['img/fabian.webp'];
 
         if (carouselInner) {
             // Clear existing items
@@ -862,12 +893,12 @@ function createSuggestionCard(product) {
     card.dataset.productId = product.id;
     card.dataset.productName = product.name;
     card.dataset.productPrice = product.price;
-    card.dataset.productImage = product.images?.[0] || 'img/fabian.png';
+    card.dataset.productImage = product.images?.[0] || 'img/fabian.webp';
     card.dataset.category = product.categories?.join(' ') || '';
 
     card.innerHTML = `
         <div class="product-img-wrapper">
-            <img src="${product.images?.[0] || 'img/fabian.png'}" alt="${product.name}">
+            <img src="${product.images?.[0] || 'img/fabian.webp'}" alt="${product.name}">
             <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
         </div>
         <div class="product-info">
