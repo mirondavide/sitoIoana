@@ -829,24 +829,6 @@
       ],
       "featured": true,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
-    },
-    {
-      "id": "52",
-      "name": "Prova",
-      "price": "18.00",
-      "images": [
-        "https://res.cloudinary.com/djnxh0anr/image/upload/v1766786675/fabian-products/zrzhwhcoxzoysuvbsif9.webp",
-        "https://res.cloudinary.com/djnxh0anr/image/upload/v1766786680/fabian-products/yl4k6xhs3wbgncstq0sm.webp"
-      ],
-      "categories": [
-        "asilo",
-        "bimba",
-        "regalo",
-        "decorazioni"
-      ],
-      "featured": true,
-      "description": "Prova del prodotto",
-      "specs": {}
     }
   ]
 }
