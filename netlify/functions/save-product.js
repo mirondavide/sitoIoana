@@ -1,6 +1,6 @@
 const { Octokit } = require('@octokit/rest');
 
-const REQUIRED_ENV_VARS = ['GITHUB_TOKEN', 'GITHUB_REPO'];
+const REQUIRED_ENV_VARS = ['GITHUB_TOKEN', 'GITHUB_REPO', 'ADMIN_API_KEY'];
 const VALID_CATEGORIES = ['asilo', 'bimbo', 'bimba', 'cucina', 'tovagliette', 'grembiuli', 'regalo', 'borse', 'decorazioni'];
 
 exports.handler = async (event, context) => {
@@ -15,16 +15,17 @@ exports.handler = async (event, context) => {
         };
     }
 
-    const user = context.clientContext && context.clientContext.user;
-    if (!user) {
-        console.log(`[${requestId}] Authentication failed: no user in context`);
+    // Simple API key authentication
+    const apiKey = event.headers['x-api-key'] || event.headers['X-API-Key'];
+    if (!apiKey || apiKey !== process.env.ADMIN_API_KEY) {
+        console.log(`[${requestId}] Authentication failed: invalid API key`);
         return {
             statusCode: 401,
-            body: JSON.stringify({ message: 'Unauthorized - please login' })
+            body: JSON.stringify({ message: 'Unauthorized - invalid API key' })
         };
     }
 
-    console.log(`[${requestId}] Authenticated user: ${user.email || 'unknown'}`);
+    console.log(`[${requestId}] Authenticated successfully`);
 
     for (const envVar of REQUIRED_ENV_VARS) {
         if (!process.env[envVar]) {
@@ -217,7 +218,7 @@ exports.handler = async (event, context) => {
     const newContent = Buffer.from(JSON.stringify(productsData, null, 2)).toString('base64');
     const commitMessage = `Add product: ${product.name} (via admin panel)
 
-Added by: ${user.email || 'admin'}
+Added by: admin
 Product ID: ${product.id}`;
 
     try {

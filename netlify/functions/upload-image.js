@@ -1,6 +1,6 @@
 const cloudinary = require('cloudinary').v2;
 
-const REQUIRED_ENV_VARS = ['CLOUDINARY_CLOUD_NAME', 'CLOUDINARY_API_KEY', 'CLOUDINARY_API_SECRET'];
+const REQUIRED_ENV_VARS = ['CLOUDINARY_CLOUD_NAME', 'CLOUDINARY_API_KEY', 'CLOUDINARY_API_SECRET', 'ADMIN_API_KEY'];
 
 exports.handler = async (event, context) => {
     const requestId = Math.random().toString(36).substring(7);
@@ -14,16 +14,17 @@ exports.handler = async (event, context) => {
         };
     }
 
-    const user = context.clientContext && context.clientContext.user;
-    if (!user) {
-        console.log(`[${requestId}] Authentication failed: no user in context`);
+    // Simple API key authentication
+    const apiKey = event.headers['x-api-key'] || event.headers['X-API-Key'];
+    if (!apiKey || apiKey !== process.env.ADMIN_API_KEY) {
+        console.log(`[${requestId}] Authentication failed: invalid API key`);
         return {
             statusCode: 401,
-            body: JSON.stringify({ message: 'Unauthorized - please login' })
+            body: JSON.stringify({ message: 'Unauthorized - invalid API key' })
         };
     }
 
-    console.log(`[${requestId}] Authenticated user: ${user.email || 'unknown'}`);
+    console.log(`[${requestId}] Authenticated successfully`);
 
     for (const envVar of REQUIRED_ENV_VARS) {
         if (!process.env[envVar]) {

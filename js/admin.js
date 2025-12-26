@@ -1,41 +1,16 @@
 /**
  * Admin Panel JavaScript
- * Handles product form submission and Netlify Identity authentication
+ * Handles product form submission
  */
 
 let uploadedImages = [];
 let imageFiles = [];
 
-// Initialize Netlify Identity
-const netlifyIdentity = window.netlifyIdentity;
+// API Key - will be set by environment variable at build time
+const API_KEY = '__ADMIN_API_KEY__'; // This will be replaced during build
 
-// Check authentication on page load
+// Setup event listeners on page load
 document.addEventListener('DOMContentLoaded', function() {
-    netlifyIdentity.on('init', user => {
-        if (!user) {
-            netlifyIdentity.open();
-        }
-    });
-
-    netlifyIdentity.on('login', () => {
-        netlifyIdentity.close();
-        location.reload();
-    });
-
-    netlifyIdentity.on('logout', () => {
-        location.href = '/index.html';
-    });
-
-    netlifyIdentity.init();
-
-    // Check if user is logged in
-    const user = netlifyIdentity.currentUser();
-    if (!user) {
-        netlifyIdentity.open();
-        return;
-    }
-
-    // Setup event listeners
     setupEventListeners();
 });
 
@@ -44,11 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function setupEventListeners() {
     const form = document.getElementById('productForm');
-    const logoutBtn = document.getElementById('logoutBtn');
     const imagesInput = document.getElementById('productImages');
 
     form.addEventListener('submit', handleFormSubmit);
-    logoutBtn.addEventListener('click', () => netlifyIdentity.logout());
     imagesInput.addEventListener('change', handleImageSelection);
 }
 
@@ -225,14 +198,6 @@ async function uploadImages() {
     progressDiv.style.display = 'block';
     const imageUrls = [];
 
-    const user = netlifyIdentity.currentUser();
-    if (!user || !user.token || !user.token.access_token) {
-        progressDiv.style.display = 'none';
-        throw new Error('Sessione scaduta. Effettua di nuovo il login.');
-    }
-
-    const token = user.token.access_token;
-
     for (let i = 0; i < imageFiles.length; i++) {
         const file = imageFiles[i];
         const progress = Math.round(((i + 1) / imageFiles.length) * 100);
@@ -247,7 +212,7 @@ async function uploadImages() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`
+                    'X-API-Key': API_KEY
                 },
                 body: JSON.stringify({
                     image: base64,
@@ -337,18 +302,11 @@ async function getNextProductId() {
  * Save product to products.json via Netlify Function
  */
 async function saveProduct(product) {
-    const user = netlifyIdentity.currentUser();
-    if (!user || !user.token || !user.token.access_token) {
-        throw new Error('Sessione scaduta. Effettua di nuovo il login.');
-    }
-
-    const token = user.token.access_token;
-
     const response = await fetch('/.netlify/functions/save-product', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
+            'X-API-Key': API_KEY
         },
         body: JSON.stringify(product)
     });
