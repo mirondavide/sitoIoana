@@ -1,0 +1,9 @@
+{
+  "name": "sitoioana",
+  "version": "1.0.0",
+  "description": "Fabian - Articoli per Bambini",
+  "dependencies": {
+    "@octokit/rest": "^19.0.0",
+    "cloudinary": "^1.41.0"
+  }
+}

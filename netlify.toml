@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+# Redirect for admin page
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
