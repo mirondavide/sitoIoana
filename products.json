@@ -7,7 +7,10 @@
       "images": [
         "img/ilaria.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": false,
       "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
@@ -22,7 +25,10 @@
       "images": [
         "img/marika.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": false,
       "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
@@ -37,7 +43,10 @@
       "images": [
         "img/claudia.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": false,
       "description": "Personalizza il tuo astuccio scuola per la maestra e rendi particolare il colore, la scritta e il motivo grafico! È capace di contenere al suo interno il necessario in maniera da avere ogni giorno l'indispensabile; scegli di regalate questo magnifico pensiero alla tua maestra e stupiscila con questo favoloso pensiero da decorare in ogni dettaglio.",
       "specs": {
@@ -52,7 +61,10 @@
       "images": [
         "img/matei.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": false,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui."
     },
@@ -63,7 +75,10 @@
       "images": [
         "img/saccaMatei.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": false,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
@@ -78,7 +93,10 @@
       "images": [
         "img/mateiAsciugamano.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
@@ -93,7 +111,10 @@
       "images": [
         "img/zainoMatei.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
@@ -112,7 +133,10 @@
         "img/quartoMatei.webp",
         "img/quintoMatei.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro set asilo personalizzabile è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così accessori unici e speciali per lui.",
       "specs": {
@@ -131,15 +155,17 @@
         "img/quartoMatilde.webp",
         "img/terzoMatilde.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro set asilo personalizzabile è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così accessori unici e speciali per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "10",
       "name": "Set Marco",
@@ -151,15 +177,17 @@
         "img/quartaMarco.webp",
         "img/quintaMarco.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro set asilo personalizzabile è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così accessori unici e speciali per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "11",
       "name": "Asciugamano Sara",
@@ -167,15 +195,17 @@
       "images": [
         "img/asciugamoSara.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "12",
       "name": "Asciugamano  Marco",
@@ -183,15 +213,17 @@
       "images": [
         "img/asciugamanoMarco.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "13",
       "name": "Asciugamano Matilde",
@@ -199,15 +231,17 @@
       "images": [
         "img/asciugamanoMatilde.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro asciugamano personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "14",
       "name": "Bavaglino Marco",
@@ -215,15 +249,17 @@
       "images": [
         "img/bavaglinoMarco.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "15",
       "name": "Bavaglino Matilde",
@@ -231,66 +267,74 @@
       "images": [
         "img/bavaglinoMatilde.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro bavaglino personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "16",
       "name": "Sacca Sara",
       "price": "25.00",
       "images": [
-       "img/saccaSara.webp",
-       "img/saccaDietro.webp"
+        "img/saccaSara.webp",
+        "img/saccaDietro.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "17",
       "name": "Sacca Marco",
       "price": "25.00",
       "images": [
         "img/saccoMarco.webp",
-       "img/saccaDietro.webp"
+        "img/saccaDietro.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "18",
       "name": "Sacca Matilde",
       "price": "25.00",
       "images": [
         "img/saccaMatilde.webp",
-       "img/saccaDietro.webp"
+        "img/saccaDietro.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. La nostra sacca personalizzata è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "19",
       "name": "Zaino Sara",
@@ -298,15 +342,17 @@
       "images": [
         "img/zainoSara.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "20",
       "name": "Zaino Marco",
@@ -314,15 +360,17 @@
       "images": [
         "img/zainoMarco.webp"
       ],
-      "categories": ["asilo", "bimbo"],
+      "categories": [
+        "asilo",
+        "bimbo"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
         "altezza": "27cm",
         "larghezza": "24cm"
       }
-    }
-    ,
+    },
     {
       "id": "21",
       "name": "Zaino Matilde",
@@ -330,7 +378,10 @@
       "images": [
         "img/zainoMatilde.webp"
       ],
-      "categories": ["asilo", "bimba"],
+      "categories": [
+        "asilo",
+        "bimba"
+      ],
       "featured": true,
       "description": "L'inizio della scuola materna o del nido è un momento cruciale per i bambini e i genitori. Il nostro zainetto personalizzato è l'ideale per facilitare questa transizione, aiutando il bambino a riconoscere i suoi effetti personali nel nuovo ambiente. Puoi personalizzarlo con il nome del tuo bambino, creando così un accessorio unico e speciale per lui.",
       "specs": {
@@ -345,7 +396,11 @@
       "images": [
         "img/sebastian.webp"
       ],
-      "categories": ["decorazioni", "bimbo", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimbo",
+        "regalo"
+      ],
       "featured": false,
       "description": "Il nostro cavallino dondolante personalizzabile è un giocattolo irresistibile per i piccoli amanti dei cavalli. Scegli il colore che preferisci e aggiungi un nome sul collare per un tocco speciale. Questo giocattolo è perfetto per stimolare l'immaginazione dei bambini e garantire ore di divertimento sicuro."
     },
@@ -356,7 +411,11 @@
       "images": [
         "img/vladmir.webp"
       ],
-      "categories": ["decorazioni", "bimbo", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimbo",
+        "regalo"
+      ],
       "featured": false,
       "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
     },
@@ -367,7 +426,11 @@
       "images": [
         "img/diego.webp"
       ],
-      "categories": ["decorazioni", "bimbo", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimbo",
+        "regalo"
+      ],
       "featured": false,
       "description": "Regala dolci sogni al tuo bambino con il nostro elefantino appeso a una soffice nuvoletta personalizzabile! Il nome del tuo piccolo brilla sopra questo adorabile compagno, aggiungendo un tocco personale. Realizzato con materiali di alta qualità, è un'aggiunta incantevole alla cameretta del tuo bambino. Un regalo unico e affettuoso che fa sognare ad occhi aperti!"
     },
@@ -378,7 +441,11 @@
       "images": [
         "img/cuoreEmma.webp"
       ],
-      "categories": ["decorazioni", "bimba", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimba",
+        "regalo"
+      ],
       "featured": false,
       "description": "Questo prezioso regalo di nascita, impreziosito dal nome del neonato finemente ricamato, è anche completamente personalizzabile, aggiungendo un tocco unico e speciale. Avvolto in cotone soffice, questo morbido dono non solo offre calore e comfort, ma rappresenta anche un ricordo indimenticabile della gioiosa occasione. Un gesto affettuoso e pensato con cura, pronto a creare momenti di dolcezza e tenerezza per tutta la vita."
     },
@@ -389,7 +456,11 @@
       "images": [
         "img/susy.webp"
       ],
-      "categories": ["decorazioni", "bimba", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimba",
+        "regalo"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -400,7 +471,9 @@
       "images": [
         "img/versetto.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -411,7 +484,9 @@
       "images": [
         "img/375.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -422,7 +497,9 @@
       "images": [
         "img/riconosciuto.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -433,7 +510,9 @@
       "images": [
         "img/rosa.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -444,7 +523,9 @@
       "images": [
         "img/verde.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -455,7 +536,10 @@
       "images": [
         "img/lunaEmma.webp"
       ],
-      "categories": ["decorazioni", "bimba"],
+      "categories": [
+        "decorazioni",
+        "bimba"
+      ],
       "featured": false,
       "description": "Cuoricino ricamato, il tuo spazio per l'autoespressione. La parte anteriore è un'opera d'arte personalizzata con la tua grafica e il tuo messaggio, mentre la parte posteriore accoglie ulteriori dettagli come nomi, eventi e date. Crea un pezzo unico che rifletta la tua personalità o regalalo per condividere affetto e significato in modo speciale. Un'opportunità di rendere ogni momento indimenticabile e tangibile."
     },
@@ -466,7 +550,11 @@
       "images": [
         "img/thea.webp"
       ],
-      "categories": ["decorazioni", "bimba", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimba",
+        "regalo"
+      ],
       "featured": false,
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
@@ -477,7 +565,11 @@
       "images": [
         "img/mario.webp"
       ],
-      "categories": ["decorazioni", "bimbo", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimbo",
+        "regalo"
+      ],
       "featured": false,
       "description": "Eleva la tua stanza con la nuvoletta personalizzabile! Sospesa graziosamente con il nome che preferisci, questa tenera creazione porta un tocco di magia e dolcezza al tuo spazio. Scegli tra una gamma di colori pastello e crea un'atmosfera unica che ti farà sorridere ogni giorno."
     },
@@ -488,7 +580,11 @@
       "images": [
         "img/orsoThea.webp"
       ],
-      "categories": ["decorazioni", "bimba", "regalo"],
+      "categories": [
+        "decorazioni",
+        "bimba",
+        "regalo"
+      ],
       "featured": false,
       "description": "Peluche tenerissimo, accompagnato da  vivaci palloncini. Potrai personalizzare i palloncini con le lettere del tuo nome per renderlo unico. Con un'espressione tenera e dettagli curati, questo pupazzo è pronto a portare allegria e dolcezza nella tua vita. Un compagno perfetto per chi ama la magia dei palloncini e l'abbraccio caldo di un orsetto di peluche."
     },
@@ -497,9 +593,11 @@
       "name": "Ghirlanda",
       "price": "35.00",
       "images": [
-       "img/ghirlanda.webp"
+        "img/ghirlanda.webp"
       ],
-      "categories": ["decorazioni"],
+      "categories": [
+        "decorazioni"
+      ],
       "featured": false,
       "description": "Una ghirlanda personalizzabile che ti permette di esprimere la tua creatività! Con colori, materiali e decorazioni a tua scelta, questa ghirlanda diventa un'opera d'arte unica. Perfetta per decorare la porta d'ingresso, la casa o qualsiasi spazio speciale. Un regalo originale e personalizzato per te o per qualcun altro!"
     },
@@ -510,7 +608,10 @@
       "images": [
         "img/stellaEnugola.webp"
       ],
-      "categories": ["decorazioni", "regalo"],
+      "categories": [
+        "decorazioni",
+        "regalo"
+      ],
       "featured": false,
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
@@ -521,7 +622,10 @@
       "images": [
         "img/stellaenuvolarosa.webp"
       ],
-      "categories": ["decorazioni", "regalo"],
+      "categories": [
+        "decorazioni",
+        "regalo"
+      ],
       "featured": false,
       "description": "Cuscini personalizzabili a forma di stella e nuvola, perfetti per un tocco di fantasia nella tua casa. Disponibili in varie combinazioni di colori e design, questi morbidi cuscini aggiungono un tocco unico e confortevole a qualsiasi ambiente. Sono un regalo ideale per rendere ogni spazio più accogliente e speciale. Abbraccia la dolcezza e il comfort con questi adorabili cuscini."
     },
@@ -532,10 +636,26 @@
       "images": [
         "img/felino.webp"
       ],
-      "categories": ["regalo"],
+      "categories": [
+        "regalo"
+      ],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo.",
-      "relatedProducts": ["23", "24", "37", "38", "22", "33", "34", "35", "25", "26", "39", "40", "41"]
+      "relatedProducts": [
+        "23",
+        "24",
+        "37",
+        "38",
+        "22",
+        "33",
+        "34",
+        "35",
+        "25",
+        "26",
+        "39",
+        "40",
+        "41"
+      ]
     },
     {
       "id": "40",
@@ -544,7 +664,10 @@
       "images": [
         "img/borsaverde.webp"
       ],
-      "categories": ["borse", "regalo"],
+      "categories": [
+        "borse",
+        "regalo"
+      ],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo."
     },
@@ -553,9 +676,12 @@
       "name": "Borsa Katrina",
       "price": "32.00",
       "images": [
-       "img/katrina.webp"
+        "img/katrina.webp"
       ],
-      "categories": ["borse", "regalo"],
+      "categories": [
+        "borse",
+        "regalo"
+      ],
       "featured": false,
       "description": "Indispensabile per averle sempre a portata di mano, le borse!\nUn accessorio irrinunciabile per ogni donna.\nPersonalizza la tua borsa con diversi materiali, formati e modelli, fiori, farfalle, animali o perché no, se, mentre sei in giro, vuoi diffondere un messaggio positivo a chi ti circonda, le borse con frasi motivazionali sono proprio quello che fanno al caso tuo."
     },
@@ -564,9 +690,12 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-       "img/scozzeseGrigio.webp"
+        "img/scozzeseGrigio.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
@@ -575,9 +704,12 @@
       "name": "Scozzese",
       "price": "12.00",
       "images": [
-       "img/scozzese.webp"
+        "img/scozzese.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
@@ -588,7 +720,10 @@
       "images": [
         "img/scozzesePiatto.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con  i tuoi tovaglioli di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
@@ -599,7 +734,10 @@
       "images": [
         "img/quadrettata.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola natalizia con i tuoi sottopiatti  di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina e portino calore in questo periodo festivo!"
     },
@@ -610,7 +748,10 @@
       "images": [
         "img/farfalle.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": true,
       "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!"
     },
@@ -621,7 +762,10 @@
       "images": [
         "img/romantica.webp"
       ],
-      "categories": ["cucina", "tovagliette"],
+      "categories": [
+        "cucina",
+        "tovagliette"
+      ],
       "featured": false,
       "description": "Scegli praticità ed eleganza per la tua tavola con i tuoi sottopiatti di stoffa!\nLascia che il design ed i colori personalizzabili si intonino alla tua cucina!"
     },
@@ -632,7 +776,11 @@
       "images": [
         "img/setSusy.webp"
       ],
-      "categories": ["cucina", "bimba", "grembiuli"],
+      "categories": [
+        "cucina",
+        "bimba",
+        "grembiuli"
+      ],
       "featured": false,
       "description": "Quali sono i ricordi d'infanzia più teneri di tutti noi? Certamente, tra i migliori ci sono quei giorni in cui mamma o nonna ci mettevano il grembiulino insegnandoci come pasticciare con pane e biscotti. \nCon questo fantastico grembiule da bambino/a personalizzato siete pronte per appassionare i vostri figli alla cucina! Allacciate i grembiuli vedrete che risultati!",
       "specs": {
@@ -647,7 +795,10 @@
       "images": [
         "img/grembiule.webp"
       ],
-      "categories": ["cucina", "grembiuli"],
+      "categories": [
+        "cucina",
+        "grembiuli"
+      ],
       "featured": true,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
     },
@@ -656,9 +807,12 @@
       "name": "Grembiule Irina",
       "price": "28.00",
       "images": [
-       "img/irina.webp"
+        "img/irina.webp"
       ],
-      "categories": ["cucina", "grembiuli"],
+      "categories": [
+        "cucina",
+        "grembiuli"
+      ],
       "featured": false,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
     },
@@ -667,11 +821,32 @@
       "name": "Grembiule Barbara",
       "price": "28.00",
       "images": [
-       "img/barbara.webp"
+        "img/barbara.webp"
       ],
-      "categories": ["cucina", "grembiuli"],
+      "categories": [
+        "cucina",
+        "grembiuli"
+      ],
       "featured": true,
       "description": "Hai in mente una frase carina, un nome, un logo, una grafica per un regalo personalizzato? Io realizzerò per te il ricamo su un grembiule hand made. Rendi speciale questo momento e personalizza un grembiule in maniera del tutto originale e unica. Ottima idea regalo per un compleanno, la festa della mamma o del papà, o per la nostra cara nonna, zia, cugina, amica...."
+    },
+    {
+      "id": "52",
+      "name": "Prova",
+      "price": "18.00",
+      "images": [
+        "https://res.cloudinary.com/djnxh0anr/image/upload/v1766786675/fabian-products/zrzhwhcoxzoysuvbsif9.webp",
+        "https://res.cloudinary.com/djnxh0anr/image/upload/v1766786680/fabian-products/yl4k6xhs3wbgncstq0sm.webp"
+      ],
+      "categories": [
+        "asilo",
+        "bimba",
+        "regalo",
+        "decorazioni"
+      ],
+      "featured": true,
+      "description": "Prova del prodotto",
+      "specs": {}
     }
   ]
 }
