@@ -58,9 +58,73 @@
         #uploadProgress {
             display: none;
         }
+
+        /* Login Form Styles */
+        #loginOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        #loginOverlay.hidden {
+            display: none;
+        }
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+            width: 90%;
+        }
+        .login-box h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+        .login-box .form-control {
+            margin-bottom: 20px;
+        }
+        .login-error {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: -15px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        .login-error.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
+    <!-- Login Overlay -->
+    <div id="loginOverlay">
+        <div class="login-box">
+            <h2><i class="bi bi-lock"></i> Admin Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="adminPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="adminPassword" placeholder="Inserisci la password" required autofocus>
+                </div>
+                <div class="login-error" id="loginError">
+                    <i class="bi bi-exclamation-circle"></i> Password errata!
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-box-arrow-in-right"></i> Accedi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="container">
         <div class="admin-container">
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -198,22 +262,46 @@
         (function() {
             const ADMIN_PASSWORD = 'dana123'; // Change this to your desired password
             const SESSION_KEY = 'adminAuth';
+            const loginOverlay = document.getElementById('loginOverlay');
+            const loginForm = document.getElementById('loginForm');
+            const loginError = document.getElementById('loginError');
+            const passwordInput = document.getElementById('adminPassword');
 
             // Check if already authenticated in this session
-            if (sessionStorage.getItem(SESSION_KEY) !== 'true') {
-                const password = prompt('Inserisci la password admin:');
-                if (password !== ADMIN_PASSWORD) {
-                    alert('Password errata!');
-                    window.location.href = 'index.html';
-                    return;
-                }
-                sessionStorage.setItem(SESSION_KEY, 'true');
+            if (sessionStorage.getItem(SESSION_KEY) === 'true') {
+                loginOverlay.classList.add('hidden');
+            } else {
+                loginOverlay.classList.remove('hidden');
             }
+
+            // Handle login form submission
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const password = passwordInput.value;
+
+                if (password === ADMIN_PASSWORD) {
+                    sessionStorage.setItem(SESSION_KEY, 'true');
+                    loginOverlay.classList.add('hidden');
+                    loginError.classList.remove('show');
+                    passwordInput.value = '';
+                } else {
+                    loginError.classList.add('show');
+                    passwordInput.value = '';
+                    passwordInput.focus();
+                    // Shake animation
+                    loginError.style.animation = 'shake 0.3s';
+                    setTimeout(() => {
+                        loginError.style.animation = '';
+                    }, 300);
+                }
+            });
 
             // Logout functionality
             document.getElementById('logoutBtn').addEventListener('click', function() {
                 sessionStorage.removeItem(SESSION_KEY);
-                window.location.href = 'index.html';
+                loginOverlay.classList.remove('hidden');
+                passwordInput.value = '';
+                passwordInput.focus();
             });
         })();
     </script>
