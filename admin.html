@@ -101,6 +101,104 @@
         .login-error.show {
             display: block;
         }
+
+        /* Product Management Styles */
+        .admin-product-card {
+            background: white;
+            border: 1px solid var(--color-border, #e0d8cf);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        .admin-product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .admin-product-card .product-img-wrapper {
+            position: relative;
+            aspect-ratio: 1;
+            background: #f8f9fa;
+            overflow: hidden;
+        }
+
+        .admin-product-card .product-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .admin-product-card .product-info {
+            padding: 12px;
+        }
+
+        .admin-product-card .product-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .admin-product-card .product-price {
+            color: var(--color-primary, #783D44);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .admin-product-card .product-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .admin-product-card .category-badge {
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            background: #f0f0f0;
+            border-radius: 4px;
+        }
+
+        .admin-product-card .product-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .admin-product-card .btn-sm {
+            font-size: 0.85rem;
+            padding: 6px 12px;
+        }
+
+        /* Modal specific styles */
+        #editProductModal .modal-body {
+            max-height: calc(100vh - 200px);
+        }
+
+        .existing-images-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .existing-images-preview .image-item {
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .existing-images-preview .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
     </style>
 </head>
 <body>
@@ -250,6 +348,187 @@
                 <a href="index.html" class="text-decoration-none">
                     <i class="bi bi-arrow-left"></i> Torna al sito
                 </a>
+            </div>
+
+            <!-- Product Management Section -->
+            <div class="mt-5 pt-5 border-top">
+                <h2 class="h3 mb-4">Gestisci Prodotti Esistenti</h2>
+
+                <!-- Loading State -->
+                <div id="productsLoading" class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Caricamento...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Caricamento prodotti...</p>
+                </div>
+
+                <!-- Error State -->
+                <div id="productsError" class="alert alert-danger d-none"></div>
+
+                <!-- Products Grid -->
+                <div id="productsGrid" class="products-grid d-none"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">
+                        <i class="bi bi-pencil-square"></i> Modifica Prodotto
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProductForm">
+                        <!-- Hidden field for product ID -->
+                        <input type="hidden" id="editProductId">
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="editProductName" class="form-label">Nome Prodotto *</label>
+                            <input type="text" class="form-control" id="editProductName" required>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="mb-3">
+                            <label for="editProductPrice" class="form-label">Prezzo (€) *</label>
+                            <input type="text" class="form-control" id="editProductPrice" placeholder="18.00" required pattern="^\d+\.\d{2}$">
+                            <small class="form-text text-muted">Formato: 18.00 (con due decimali)</small>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label for="editProductDescription" class="form-label">Descrizione *</label>
+                            <textarea class="form-control" id="editProductDescription" rows="4" required></textarea>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="mb-3">
+                            <label class="form-label">Categorie * (seleziona almeno una)</label>
+                            <div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatAsilo" value="asilo">
+                                    <label class="form-check-label" for="editCatAsilo">Asilo</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatBimbo" value="bimbo">
+                                    <label class="form-check-label" for="editCatBimbo">Bimbo</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatBimba" value="bimba">
+                                    <label class="form-check-label" for="editCatBimba">Bimba</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatCucina" value="cucina">
+                                    <label class="form-check-label" for="editCatCucina">Cucina</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatTovagliette" value="tovagliette">
+                                    <label class="form-check-label" for="editCatTovagliette">Tovagliette</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatGrembiuli" value="grembiuli">
+                                    <label class="form-check-label" for="editCatGrembiuli">Grembiuli</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatRegalo" value="regalo">
+                                    <label class="form-check-label" for="editCatRegalo">Regalo</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatBorse" value="borse">
+                                    <label class="form-check-label" for="editCatBorse">Borse</label>
+                                </div>
+                                <div class="form-check form-check-inline category-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="editCatDecorazioni" value="decorazioni">
+                                    <label class="form-check-label" for="editCatDecorazioni">Decorazioni</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Featured -->
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="editProductFeatured">
+                                <label class="form-check-label" for="editProductFeatured">
+                                    Prodotto in evidenza (appare in "I più amati")
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Existing Images Preview -->
+                        <div class="mb-3">
+                            <div id="existingImagesPreview"></div>
+                        </div>
+
+                        <!-- New Images -->
+                        <div class="mb-3">
+                            <label for="editProductImages" class="form-label">Nuove Immagini (opzionale - sostituiscono tutte le precedenti)</label>
+                            <input type="file" class="form-control" id="editProductImages" accept="image/*" multiple>
+                            <small class="form-text text-muted">Formati supportati: WebP, JPG, PNG. Verranno convertiti in WebP automaticamente.</small>
+                            <div id="editImagePreview" class="image-preview"></div>
+                        </div>
+
+                        <!-- Upload Progress -->
+                        <div id="editUploadProgress" style="display: none;" class="mb-3">
+                            <div class="progress">
+                                <div id="editUploadProgressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <small id="editUploadStatus" class="text-muted"></small>
+                        </div>
+
+                        <!-- Specs (Optional) -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="editSpecAltezza" class="form-label">Altezza (opzionale)</label>
+                                <input type="text" class="form-control" id="editSpecAltezza" placeholder="es. 29cm">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="editSpecLarghezza" class="form-label">Larghezza (opzionale)</label>
+                                <input type="text" class="form-control" id="editSpecLarghezza" placeholder="es. 18cm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle"></i> Annulla
+                    </button>
+                    <button type="button" class="btn btn-primary" id="saveEditBtn">
+                        <i class="bi bi-check-circle"></i> Salva Modifiche
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="deleteConfirmModalLabel">
+                        <i class="bi bi-exclamation-triangle"></i> Conferma Eliminazione
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2">Sei sicuro di voler eliminare questo prodotto?</p>
+                    <p class="fw-bold mb-0" id="deleteProductName"></p>
+                    <p class="text-muted small mt-2">
+                        <i class="bi bi-info-circle"></i> Questa azione non può essere annullata.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle"></i> Annulla
+                    </button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">
+                        <i class="bi bi-trash"></i> Elimina Definitivamente
+                    </button>
+                </div>
             </div>
         </div>
     </div>
