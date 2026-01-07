@@ -1014,3 +1014,197 @@ body.has-order-btn {
         width: 160px;
     }
 }
+
+/* ================================
+   DESKTOP LAYOUT FIXES (MD AND UP)
+   ================================ */
+
+@media (min-width: 768px) {
+    /* Remove container horizontal padding on desktop */
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Header and Navigation */
+    .page-title {
+        display: none; /* Hide on desktop since full nav is visible */
+    }
+
+    .navbar .container {
+        max-width: 1200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Hide mobile-only toggle buttons */
+    .toggle-view-btn {
+        display: none;
+    }
+
+    /* Categories - Convert to grid */
+    .categories-scroll {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .category-item {
+        flex-shrink: 1;
+    }
+
+    .category-img-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+
+    .category-name {
+        font-size: 0.85rem;
+    }
+
+    /* Filters - Convert to flex wrap */
+    .filters-scroll {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    /* Products Scroll - Convert to grid */
+    .products-scroll {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .scroll-card {
+        width: 100%;
+    }
+
+    /* Featured Scroll - Convert to grid */
+    .featured-scroll {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .featured-card {
+        width: 100%;
+    }
+
+    /* Suggestions Scroll - Convert to grid */
+    .suggestions-scroll {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .suggestion-card {
+        width: 100%;
+    }
+
+    /* Hide scroll hints on desktop */
+    .scroll-hint {
+        display: none;
+    }
+
+    /* Products Grid (Shop Page) - Better columns */
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    /* Section spacing */
+    .hero-slide {
+        height: 500px;
+    }
+
+    .categories-section,
+    .products-section,
+    .featured-section,
+    .new-arrivals-section,
+    .suggestions-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Promo banner */
+    .promo-banner {
+        min-height: 300px;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+    }
+
+    /* Footer spacing */
+    .footer {
+        padding: 32px 0;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Larger desktop improvements */
+    .navbar .container {
+        max-width: 1400px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Hero */
+    .hero-slide {
+        height: 600px;
+    }
+
+    /* Products Grid - 5 columns on large screens */
+    .products-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 28px;
+    }
+
+    /* Grid layouts - more columns */
+    .products-scroll,
+    .featured-scroll {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 24px;
+    }
+
+    .suggestions-scroll {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 24px;
+    }
+
+    /* Section spacing */
+    .categories-section,
+    .products-section,
+    .featured-section,
+    .new-arrivals-section,
+    .suggestions-section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    /* Promo banner */
+    .promo-banner {
+        min-height: 350px;
+    }
+}
