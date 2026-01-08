@@ -180,7 +180,7 @@ header {
 
 @media (min-width: 768px) {
     .hero-slide {
-        height: 400px;
+        height: 320px;
     }
 }
 
@@ -1127,7 +1127,7 @@ body.has-order-btn {
 
     /* Section spacing */
     .hero-slide {
-        height: 500px;
+        height: 380px;
     }
 
     .categories-section,
@@ -1172,7 +1172,7 @@ body.has-order-btn {
 
     /* Hero */
     .hero-slide {
-        height: 600px;
+        height: 480px;
     }
 
     /* Products Grid - 5 columns on large screens */
